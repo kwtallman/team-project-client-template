@@ -5,8 +5,21 @@ h2 {
 
 .left-side-info{
 	text-align: center;
+	padding-top: 20px;
+	font-weight: bold;
 }
 
 .right-side-info{
 	text-align: center;
+}
+
+body{
+	background-color: #eef5db;
+}
+
+.input-customize{
+	padding-bottom: 5px;
+	font-weight: normal;
+	width: 50%;
+	display: inline-block;
 }
