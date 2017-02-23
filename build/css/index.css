@@ -1,7 +1,24 @@
-body
+body {
+  background-color: #EEF5DB;
+ }
 
 .testtext{
   text-align: center;
   font-size: 800%;
-  color: #5990ff;
+  color: #FF8077;
+}
+.subtext{
+  text-align: center;
+  font-size: 400%;
+  color: #FF8077;
+}
+.navbarpad{
+  padding-top: 60px;
+}
+.midbox{
+  align-self: center;
+  background-color: #D6D1B1;
+}
+.butcol{
+  color: #C7EFCF
 }
