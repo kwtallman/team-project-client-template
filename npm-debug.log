@@ -26,7 +26,7 @@
 14 verbose stack     at maybeClose (internal/child_process.js:877:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid team-project-client@0.0.1
-16 verbose cwd C:\Users\eric\Documents\CS 326\Grumber\team-project-client-template\build
+16 verbose cwd C:\Users\eric\Documents\CS 326\Grumber\team-project-client-template
 17 error Windows_NT 10.0.14393
 18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "serve"
 19 error node v6.9.4
