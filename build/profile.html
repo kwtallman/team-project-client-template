@@ -32,12 +32,25 @@
         <!-- Left sidebar: A cell that spans 2 columns -->
         <div class="col-md-6 left-side-info">
           <p>First Last</p>
-          <br>
+         
           <p>username</p>
-          <br>
+          
           <p>email@umass.edu</p>
+          
+          <p>Change password:</p>
+          
+          <div class="input-customize">
+            <input type="password" class="form-control" name="old_password" placeholder="Type old password">
+          </div>
+          <div class="input-customize">
+            <input type="password" class="form-control" name="new_password" placeholder="Type new password">
+          </div>
+          <div class="input-customize">
+            <input type="password" class="form-control" name="confirm_password" placeholder="Confirm new password">
+          </div>
           <br>
-          <p>Change password</p>
+          <button id="btn-signup" type="button" class="btn btn-success">Submit</button>
+
         </div>
         <!-- Main feed: A cell that spans 7 columns -->
         <div class="col-md-6 right-side-info">
