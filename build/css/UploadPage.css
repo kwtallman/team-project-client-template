@@ -1,0 +1,16 @@
+body {
+  background-color: #EEF5DB;
+}
+.navbar {
+  background-color: #C7EFCF;
+}
+.left-icons {
+  float: left;
+}
+.right-icons {
+  float: right;
+}
+.grumber-text {
+  text-align: center;
+  color: #FFAEA8 !important;
+}
