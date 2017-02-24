@@ -20,5 +20,9 @@ body {
   background-color: #D6D1B1;
 }
 .butcol{
-  color: #C7EFCF
+  color: #C7EFCF;
+}
+.eventstxt{
+  color: #FF8077;
+  text-align: center;
 }
