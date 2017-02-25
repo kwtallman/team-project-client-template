@@ -4,153 +4,198 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap Template</title>
-
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-
-
-    <!-- Custom CSS goes here -->
   </head>
   <body>
-    <!-- Custom HTML goes here -->
-    <h1>
     This is where the Colebar will be when Cole finishes it but for now this placeholder text will have to suffice as a placeholder while Cole works very hard.  I need to add more text so that it takes up more space.  Kyle is dad.
-</h1>
+    
     <h3 class = "testtext">
-    GRUMBER!
-  </h3>
-<h3 class = subtext>
-Some snappy slowgan will go here once we thunk it
-</h3>
-  <nav class="navbar">
-<!-- ".container-fluid" expands to fill the entire browser view's width.
-     ".container" will use the same width as the ".container" in the body,
-     which contains the three columns of content.
+    Grumber
+    </h3>
 
-     We want ".container" here so the navbar is the same width as the content.
+    <h3 class = subtext>
+    Good Evening!  The weather in Amherst MA is 68° and cloudy
+    </h3>
 
-     Confused? Try switching between the two container classes once you have a
-     complete navbar to see the difference. -->
-<div class="container">
-  <!-- This code is only active when viewing the site on mobile. We will not
-       cover responsive design, but we'll leave this in, as it's part of the
-       example code.-->
-  <div class = "navbarpad">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    </a>
-  </div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <form class="navbar-form navbar-left " role="search">
+            <div class="input-group">
+              <input type="text" class="form-control fb-search" placeholder="Search Grumber Events">
+              <span class="input-group-btn">
+                <button type="submit" class="btn btn-default">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </span>
+            </div>
+          </form>
+      
+        <div class="nav navbar-nav navbar-right">
 
-  <!-- On mobile, this div is hidden by default. The user hits the button
-       in the `navbar-header` to see the content of the div.
-       On desktop, this div is visible all of the time. -->
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <form class="navbar-form navbar-left " role="search">
-<!-- Left-aligned items. -->
-<div class="input-group">
-  <input type="text" class="form-control fb-search" placeholder="Search Grumber Events">
-  <span class="input-group-btn">
-    <button type="submit" class="btn btn-default">
-      <span class="glyphicon glyphicon-search"></span>
-    </button>
-  </span>
-</div>
-</form>
-<div class="nav navbar-nav navbar-right">
-<!-- Right-aligned items -->
-<div class="btn-toolbar pull-right" role="toolbar">
-<div class="btn-group" role="group">
-<button type="button" class="btn btn-default navbar-btn">
-Calendar View
-</button>
-</div>
-<div class="btn-group" role="group">
-<button type="button" class="btn btn-default navbar-btn">
-Events
-</button>
-</div>
-<div class="btn-group" role="group">
-<button type="button" class="btn btn-default navbar-btn fb-notifications">
-  <span class="glyphicon glyphicon-user"></span>
-  <span class="badge">5</span>
-</button>
-<button type="button" class="btn btn-default navbar-btn fb-notifications">
-  <span class="glyphicon glyphicon-comment"></span>
-  <span class="badge">1</span>
-</button>
-<button type="button" class="btn btn-default navbar-btn fb-notifications">
-  <span class="glyphicon glyphicon-globe"></span>
-  <span class="badge">3</span>
-</button>
-</div>
-<div class="btn-group" role="group">
-<button type="button" class="btn btn-default navbar-btn">
-<span class="glyphicon glyphicon-lock"></span>
-</button>
-<div class="btn-group" role="group">
-<button type="button" class="btn btn-default dropdown-toggle navbar-btn"
-        data-toggle="dropdown">
-  <span class="caret"></span>
-</button>
-<ul class="dropdown-menu">
-  <li><a href="#">Log out...</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-  </div><!-- /.navbar-collapse -->
-</div><!-- /.container -->
-</nav>
+          <div class="btn-toolbar" role="toolbar">
+            
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default navbar-btn">
+              Calendar First
+              </button>
+            </div>
 
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default navbar-btn">
+              My Events
+              </button>
+            </div>
 
-<div class="col-md-12">
-  <!-- Status update entry -->
-  <div class="panel panel-default midbox">
-  <div class="panel-body">
-    <ul class="nav nav-pills">
-      <li role="presentation" class="active">
-        <a href="#"><span class="glyphicon glyphicon-pencil">
-        </span> <strong>Assignment</strong></a>
-      </li>
-      <li role="presentation">
-        <a href="#"><span class="glyphicon glyphicon-picture"></span>
-        <strong>Due date</strong></a>
-      </li>
-      <li role="presentation">
-        <a href="#"><span class="glyphicon glyphicon-th"></span>
-        <strong>I don't know yet</strong></a>
-      </li>
-    </ul>
-    <div class="media">
-  <div class="media-left media-top">
-    CLASS NAME GOES HERE
-  </div>
-  <div class="media-body">
-    <div class="form-group">
-      <!-- rows="2" means "display the textarea as 2 rows high". The user can
-           enter more than 2 rows of text. -->
-           <h3 class = "testtext">
-           Dawg dis wher d' list a evnts go
-         </h3>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default navbar-btn">
+              Sort By Class
+              </button>
+            </div>
+
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default navbar-btn">
+              Events Near Me
+              </button>
+            </div>
+
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default dropdown-toggle navbar-btn"
+                    data-toggle="dropdown">
+                  Filter
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                Filter By:
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">This Week</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="col-md-12">
+      <div class="panel panel-default midbox">
+        <div class="panel-body">
+          <h3 class = eventstxt>
+          Your Upcoming Events
+          </h3>
+          <div class="media">
+            <div class="media-body">
+              <div class="form-group">
+                <table style="width:100%">
+                  <tr>
+                    <th>Class</th>
+                    <th>Assignment</th>
+                    <th>Due Date</th>
+                    <th>Time Remaining</th>
+                  </tr>
+                  <tr>
+                    <td>COMPSCI 326</td>
+                    <td>Startup 02</td>
+                    <td>February 24th at 6:00 PM</td>
+                    <td>2 Days 6 Hours 35 Minustes</td>
+                  </tr>
+                  <tr>
+                    <td>ROMANCE 101</td>
+                    <td>How to pick up Asian honnies</td>
+                    <td>February 27th 11:55PM</td>
+                    <td>time remaining goes here</td>
+                  </tr>
+                  <tr>
+                    <td>COMPSCI 326</td>
+                    <td>Startup 03</td>
+                    <td>March 10th at 6:00PM</td>
+                    <td>time remaining goes here</td>
+                  </tr>
+                  <tr>
+                    <td>Cole</td>
+                    <td>Please finish the Colebar</td>
+                    <td>So I can add it to this page</td>
+                    <td>And then it will look more sexy</td>
+                  </tr>
+                  <tr>
+                    <td>Also</td>
+                    <td>We need to do the writeup</td>
+                    <td>Please contribute</td>
+                    <td>UNLIKE STARTUP ASSIGNMENT 1 ACHEM</td>
+                  </tr>
+                  <tr>
+                    <td>Yo yo yo his name is Kyle</td>
+                    <td>Smooth with the ladies like the skin of a cocodile</td>
+                    <td>Gettin all the ladies, dat his lifestyle</td>
+                    <td>Mating dungeon in Sylvan, he straight senile</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
+    <!-- Commenting out calendar for now
+    <h3 class = subtext>
+    This is a basic janky calendar that is a palceholder as I do not know how to make a grid matrix
+    </h3>
+    <div class="month">
+      <ul>
+        <li class="prev">&#10094;</li>
+        <li class="next">&#10095;</li>
+        <li>
+          February<br>
+          <span style="font-size:18px">2017</span>
+        </li>
+      </ul>
+    </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <ul class="weekdays">
+      <li>Mo</li>
+      <li>Tu</li>
+      <li>We</li>
+      <li>Th</li>
+      <li>Fr</li>
+      <li>Sa</li>
+      <li>Su</li>
+    </ul>
+
+    <ul class="days">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+      <li>16</li>
+      <li>17</li>
+      <li>18</li>
+      <li>19</li>
+      <li><span class="active">20</span></li>
+      <li>21</li>
+      <li>22</li>
+      <li>23</li>
+      <li><span class="due">24</span></li>
+      <li>25</li>
+      <li>26</li>
+      <li><span class="due">27</span></li>
+      <li>28</li>
+    </ul>
+    -->
     <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- App code -->
     <script src="js/bundle.js"></script>
   </body>
 </html>
