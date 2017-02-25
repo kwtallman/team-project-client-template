@@ -8,11 +8,13 @@ p {
 
 h3 {
   text-align: center;
+  padding-bottom: 10px;
+  color: #FFAEA8;
 }
 
 body {
   background-color: #EEF5DB;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .navbar {
