@@ -14,48 +14,60 @@
     <link href="css/UploadPage.css" rel="stylesheet">
   </head>
   <body>
+
     <nav class="navbar navbar-fixed-top navbar-default">
         <div class="container">
-            <!-- Grumber Logo -->
-            <div class="grumber-text">
-              <h3>Grumber</h3>
-            </div>
-            <!-- Left Aligned Icons -->
-            <div class="navbar-icons left-icons">
-              <a class="navbar-brand" href="home">
-                <span class="glyphicon glyphicon-home"></span>
-                  <a class="navbar-brand" href="calendar">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                      <a class="navbar-brand" href="list">
-                        <span class="glyphicon glyphicon-list-alt"></span>
+          <div class="row">
+            <div class="col-md-3">
+              <!-- Left Aligned Icons -->
+              <div class="navbar-icons left-icons">
+                <a class="navbar-brand" href="home">
+                  <span class="glyphicon glyphicon-home"></span>
+                    <a class="navbar-brand" href="calendar">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                        <a class="navbar-brand" href="list">
+                          <span class="glyphicon glyphicon-list-alt"></span>
+                        </a>
                       </a>
                     </a>
-                  </a>
+                </div>
               </div>
+              <div class="col-md-6">
+            <!-- Grumber Logo -->
+              <div class="grumber-text">
+                <h3>Grumber</h3>
+              </div>
+            </div>
+            <div class="col-md-3">
                       <!-- Right Aligned Icons -->
               <div class="navbar-icons right-icons">
                 <a class="navbar-brand">
                   <span class="glyphicon glyphicon-tasks"></span>
                 </a>
+              </div>
             </div>
+          </div>
         </div>
       </nav>
+
     <!-- Form Upload Buttons -->
     <div class="container">
-      <p> Welcome to Grumber! </p>
-      <p> Click each button to automatically upload your assignment information </p> <br>
-        <div class="btn-group-vertical" role="group">
-            <button type="button" class="btn btn-default">Moodle</button>
-            <button type="button" class="btn btn-default">Blackboard</button>
-            <button type="button" class="btn btn-default">OWL</button>
-            <button type="button" class="btn btn-default">Gradescope</button>
-          </div>
-          <div class="btn-group-vertical" role="group"><br>
-            <p> Manually uload all other assignments here </p><br>
+      <div class"row">
+        <div class="col-md-4"> </div>
+        <div class="col-md-4">
+          <div class="btn-group-vertical" role="group">
+          <p> Welcome to Grumber! </p>
+          <p> Click each button to automatically upload your assignment information </p> <br>
+            <button type="button" class="btn btn-default">Moodle</button><br>
+            <button type="button" class="btn btn-default">Blackboard</button><br>
+            <button type="button" class="btn btn-default">OWL</button><br>
+            <button type="button" class="btn btn-default">Gradescope</button> <br>
+            <p> Manually upload all other assignments here </p><br>
             <button type="button" class="btn btn-default">Manual Upload</button>
           </div>
         </div>
       </div>
     </div>
+
   </body>
 </html>
