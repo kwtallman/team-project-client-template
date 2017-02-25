@@ -1,7 +1,12 @@
 body
 
+.padding {
+  padding-bottom: 60px;
+}
+
 .headtext {
   text-align: center;
   font-size: 200%;
-  color: #FF8077;
+  color: #FFAEA8;
+  padding-bottom: 30px;
 }
