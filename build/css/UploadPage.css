@@ -6,6 +6,10 @@ p {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
 body {
   background-color: #EEF5DB;
   padding-top: 150px;
@@ -27,11 +31,11 @@ body {
   text-align: center;
   color: #FFAEA8 !important;
 }
-
+/*
 .btn-group-vertical {
   display: inline;
 }
-
+*/
 .btn {
   padding: 10px;
 }
