@@ -18,29 +18,51 @@
 
     <div class="container">
       <div class="row">
-          <div><h3 class="headtext">Manual Deadline Entry</h3></div>
-          <form>
-            <div class="form-group">
-              <label for="usr">Class:</label>
-              <input type="text" class="form-control" id="usr">
+
+        <form>
+          <div class="form-group row">
+            <label for="classinput" class="col-2 col-form-label">Class</label>
+            <div class="col-10">
+              <input class="form-control" type="text" value="Ex: CS326" id="classinput">
             </div>
-            <div class="form-group">
-              <label for="usr">Assignment/ Event Name:</label>
-              <input type="text" class="form-control" id="usr">
+          </div>
+          <div class="form-group row">
+            <label for="typeinput">Deadline Type</label>
+            <select class="form-control" id="typeinput">
+              <option>Assignment</option>
+              <option>Event</option>
+            </select>
+          </div>
+          <div class="form-group row">
+            <label for="assigninput" class="col-2 col-form-label">Identifier</label>
+            <div class="col-10">
+              <input class="form-control" type="text" value="Ex: UI Mockup" id="assigninput">
             </div>
-            <div class="form-group">
-              <label for="usr">Due Date:</label>
-              <input type="text" class="form-control" id="usr">
+          </div>
+          <div class="form-group row">
+            <label for="dateinput" class="col-2 col-form-label">Deadline Date</label>
+            <div class="col-10">
+              <input class="form-control" type="date" value="2017-02-25" id="dateinput">
             </div>
-            <div class="form-group">
-              <label for="usr">Time:</label>
-              <input type="text" class="form-control" id="usr">
+          </div>
+          <div class="form-group row">
+            <label for="timeinput" class="col-2 col-form-label">Deadline Time</label>
+            <div class="col-10">
+              <input class="form-control" type="time" value="01:30:00" id="timeinput">
             </div>
-            <div class="form-group">
-              <label for="usr">Description:</label>
-              <input type="text" class="form-control" id="usr">
+          </div>
+          <div class="form-group row">
+            <label for="descinput">Description</label>
+            <textarea class="form-control" id="descinput" rows="3">Ex: Need to create UI Mockups.</textarea>
+          </div>
+          <div class="form-group row">
+            <label for="colorinput" class="col-2 col-form-label">Assignment Color</label>
+            <div class="col-10">
+              <input class="form-control" type="color" value="Ex: CS326" id="colorinput">
             </div>
-          </form>
+          </div>
+          <button type="submit" class= "btn btn-primary">Submit</button>
+        </form>
 
       </div>
     </div>
