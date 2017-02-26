@@ -83,3 +83,6 @@ body {font-family: Verdana, sans-serif;}
     background: #FF8077;
     color: white !important
 }
+.searchbox input{
+  height = 800;
+}

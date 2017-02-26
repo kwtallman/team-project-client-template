@@ -9,7 +9,7 @@ p {
 h3 {
   text-align: center;
   padding-bottom: 10px;
-  color: #FFAEA8;
+  color: #FF8077;
 }
 
 body {
@@ -38,6 +38,3 @@ body {
   display: inline;
 }
 */
-.btn {
-  padding: 10px;
-}
