@@ -10,3 +10,22 @@ body
   color: #FFAEA8;
   padding-bottom: 30px;
 }
+
+.page-footer{
+      text-align: center;
+}
+
+footer.page-footer{
+    margin-top: 0;
+}
+
+.footer_text{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+.grumbertext {
+    color: #FFAEA8;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
