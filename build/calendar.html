@@ -6,10 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/calendar.css" rel="stylesheet">
+    <link href="css/UploadPage.css" rel="stylesheet">
   </head>
   <body>
-    This is where the Colebar will be when Cole finishes it but for now this placeholder text will have to suffice as a placeholder while Cole works very hard.  I need to add more text so that it takes up more space.  Kyle is dad.
-    
+    <nav class="navbar navbar-fixed-top navbar-default">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <!-- Left Aligned Icons -->
+              <div class="navbar-icons left-icons">
+                <a class="navbar-brand" href="index.html">
+                  <span class="glyphicon glyphicon-home"></span>
+                    <a class="navbar-brand" href="calendar.html">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                        <a class="navbar-brand" href="index.html">
+                          <span class="glyphicon glyphicon-list-alt"></span>
+                        </a>
+                      </a>
+                    </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+            <!-- Grumber Logo -->
+              <div class="grumber-text">
+                <h3>Grumber</h3>
+              </div>
+            </div>
+            <div class="col-md-3">
+                      <!-- Right Aligned Icons -->
+              <div class="navbar-icons right-icons">
+                <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="#">
+                <span class="glyphicon glyphicon-tasks"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="profile.html">Profile</a></li>
+                  <li><a href="FirstTimeUserUploadPage.html">First Time User</a></li>
+                  <li><a href="manual.html">Manual Entry</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     <h3 class = "subtext">
     Good Evening!  The weather in Amherst MA is 68° and cloudy
     </h3>
@@ -45,10 +82,10 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu">
-                <li><a href="#">COMPSCI 326</a></li>
-                <li><a href="#">COMPSCI 305</a></li>
-                <li><a href="#">ARCHEOLOGY 451</a></li>
-                <li><a href="#">COMPLIT 110</a></li>
+                Filter:
+                <li><a href="#">By Due Date</a></li>
+                <li><a href="#">By Class</a></li>
+                <li><a href="#">By Type (Event, Assignment, or Appointment)</a></li>
               </ul>
             </div>
           </div>
@@ -56,10 +93,6 @@
       </div>
     </nav>
 
-    <!-- Commenting out calendar for now
-    <h3 class = subtext>
-    This is a basic janky calendar that is a palceholder as I do not know how to make a grid matrix
-    </h3>
     <div class="month">
       <ul>
         <li class="prev">&#10094;</li>
@@ -111,7 +144,7 @@
       <li><span class="due">27</span></li>
       <li>28</li>
     </ul>
-    -->
+    
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bundle.js"></script>
