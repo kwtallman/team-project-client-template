@@ -1,81 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head;
-         any other head content must come *after* these tags -->
-    <title>Add Assignment</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head;
+  any other head content must come *after* these tags -->
+  <title>Add Assignment</title>
 
-    <!-- Bootstrap's CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/UploadPage.css" rel="stylesheet">
-    <link href="css/AddAssignment.css" rel="stylesheet"
-    <!-- Custom JS -->
+  <!-- Bootstrap's CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/UploadPage.css" rel="stylesheet">
+  <link href="css/AddAssignment.css" rel="stylesheet">
+  <!-- Custom JS -->
 
-  </head>
-  <body>
+</head>
+<body>
 
-    <nav class="navbar navbar-fixed-top navbar-default">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <!-- Left Aligned Icons -->
-              <div class="navbar-icons left-icons">
+  <nav class="navbar navbar-fixed-top navbar-default">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- Left Aligned Icons -->
+          <div class="navbar-icons left-icons">
+            <a class="navbar-brand" href="index.html">
+              <span class="glyphicon glyphicon-home"></span>
+              <a class="navbar-brand" href="calendar.html">
+                <span class="glyphicon glyphicon-calendar"></span>
                 <a class="navbar-brand" href="index.html">
-                  <span class="glyphicon glyphicon-home"></span>
-                    <a class="navbar-brand" href="calendar.html">
-                      <span class="glyphicon glyphicon-calendar"></span>
-                        <a class="navbar-brand" href="index.html">
-                          <span class="glyphicon glyphicon-list-alt"></span>
-                        </a>
-                      </a>
-                    </a>
-                </div>
-              </div>
-              <div class="col-md-6">
-            <!-- Grumber Logo -->
-              <div class="grumber-text">
-                <h3>Grumber</h3>
-              </div>
-            </div>
-            <div class="col-md-3">
-                      <!-- Right Aligned Icons -->
-              <div class="navbar-icons right-icons">
-                <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="#">
-                <span class="glyphicon glyphicon-tasks"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="profile.html">Profile</a></li>
-                  <li><a href="AddAssignment.html">Add Assignment</a></li>
-                  <li><a href="manual.html">Manual Entry</a></li>
-                </ul>
-              </div>
+                  <span class="glyphicon glyphicon-list-alt"></span>
+                </a>
+              </a>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Grumber Logo -->
+          <div class="grumber-text">
+            <h3>Grumber</h3>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <!-- Right Aligned Icons -->
+          <div class="navbar-icons right-icons">
+            <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="#">
+              <span class="glyphicon glyphicon-tasks"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="AddAssignment.html">Add Assignment</a></li>
+                <li><a href="manual.html">Manual Entry</a></li>
+              </ul>
             </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
     <!-- Form Upload Buttons -->
     <div class="container">
       <div class="row">
         <div class="col-md-4"> </div>
         <div class="col-md-4">
           <div class="btn-group-vertical" role="group">
-          <h3> New Assignments? </h3>
-          <p> Click any button to automatically update your assignment information </p> <br>
-            <button type="button" class="btn btn-default">
-              <span class="glyphicon glyphicon-repeat"></span>Moodle
-            </button><br>
-            <button type="button" class="btn btn-default">
-              <span class="glyphicon glyphicon-repeat"></span>Blackboard
-            </button><br>
-            <button type="button" class="btn btn-default">
-              <span class="glyphicon glyphicon-repeat"></span>OWL
-            </button><br>
-            <button type="button" class="btn btn-default">
-              <span class="glyphicon glyphicon-repeat"></span>Gradescope
-            </button> <br>
+            <h3> New Assignments? </h3>
+            <p> Click any button to automatically update your assignment information </p> <br>
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-2">
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-repeat"></span></button><br>
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-repeat"></span></button><br>
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-repeat"></span></button><br>
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-repeat"></span></button><br>
+              </div>
+              <div class="col-md-7">
+                <p class="assignments">Moodle</p>
+                <p class="assignments">Blackboard</p>
+                <p class="assignments">OWL</p>
+                <p class="assignments">Gradescope</p>
+              </div>
+            </div>
             <p> Manually upload all other assignments here </p><br>
             <button type="button" onclick="window.location='manual.html'" class="btn btn-default">Manual Upload</button>
           </div>
@@ -90,4 +93,4 @@
     <!-- Custom JS -->
     <script src="js/UploadPage.js"></script>
   </body>
-</html>
+  </html>
