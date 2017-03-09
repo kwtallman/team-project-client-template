@@ -4,197 +4,36 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Template</title>
 
-    <title>List View</title>
-
+    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
-    <link href="css/UploadPage.css" rel="stylesheet">
+
+    <!-- Custom CSS goes here -->
   </head>
   <body>
-    <nav class="navbar navbar-fixed-top navbar-default">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <!-- Left Aligned Icons -->
-              <div class="navbar-icons left-icons">
-                <a class="navbar-brand" href="index.html">
-                  <span class="glyphicon glyphicon-home"></span>
-                    <a class="navbar-brand" href="calendar.html">
-                      <span class="glyphicon glyphicon-calendar"></span>
-                        <a class="navbar-brand" href="index.html">
-                          <span class="glyphicon glyphicon-list-alt"></span>
-                        </a>
-                      </a>
-                    </a>
-                </div>
-              </div>
-              <div class="col-md-6">
-            <!-- Grumber Logo -->
-              <div class="grumber-text">
-                <h3>Grumber</h3>
-              </div>
-            </div>
-            <div class="col-md-3">
-                      <!-- Right Aligned Icons -->
-              <div class="navbar-icons right-icons">
-                <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="#">
-                <span class="glyphicon glyphicon-tasks"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="profile.html">Profile</a></li>
-                  <li><a href="AddAssignment.html">Add Assignment</a></li>
-                  <li><a href="manual.html">Manual Entry</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-    <h1 class = "subtext">
-    Good Evening! The weather in Amherst MA is 68° and cloudy
-    </h1>
-
-    <nav class="second-navbar navbar">
-      <div class="container">
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <form class="navbar-form navbar-left" role="search">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search Grumber Events">
-              <span class="input-group-btn">
-                <button type="submit" class="btn btn-default">
-                  <span class="glyphicon glyphicon-search"></span>
-                </button>
-              </span>
-            </div>
-          </form>
-
-        <div class="nav navbar-nav navbar-right">
-
-          <div class="btn-toolbar" role="toolbar">
-
-            <div class="btn-group" role="group">
-              <a href="calendar.html" type="button" class="btn btn-default navbar-btn">
-              Calendar View
-              </a>
-            </div>
-
-            <div class="btn-group" role="group">
-              <button type="button" class="btn btn-default dropdown-toggle navbar-btn"
-                    data-toggle="dropdown">
-                  Filter
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu">
-                Filter:
-                <li><a href="#">By Due Date</a></li>
-                <li><a href="#">By Class</a></li>
-                <li><a href="#">By Type (Event, Assignment, or Appointment)</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <div class="col-md-12">
-      <div class="panel panel-default midbox">
-        <div class="panel-body">
-          <h3 class = "eventstxt">
-          Your Upcoming Events
-          </h3>
-          <div class="media">
-            <div class="media-body">
-              <div class="form-group">
-                <table style="width:100%">
-                  <tr>
-                    <th>Class</th>
-                    <th>Assignment</th>
-                    <th>Due Date</th>
-                    <th>Time Remaining</th>
-                  </tr>
-                  <tr>
-                    <td>COMPSCI 326</td>
-                    <td>Startup 02</td>
-                    <td>February 24th at 6:00 PM</td>
-                    <td>2 Days 6 Hours 35 Minutes</td>
-                  </tr>
-                  <tr>
-                    <td>ROMANCE 101</td>
-                    <td>How to pick up Asian honnies</td>
-                    <td>February 27th 11:55PM</td>
-                    <td>time remaining goes here</td>
-                  </tr>
-                  <tr>
-                    <td>COMPSCI 326</td>
-                    <td>Startup 03</td>
-                    <td>March 10th at 6:00PM</td>
-                    <td>time remaining goes here</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="month">
-      <ul>
-        <li class="prev">&#10094;</li>
-        <li class="next">&#10095;</li>
-        <li>
-          February<br>
-          <span style="font-size:18px">2017</span>
-        </li>
-      </ul>
-    </div>
-
-    <ul class="weekdays">
-      <li>Mo</li>
-      <li>Tu</li>
-      <li>We</li>
-      <li>Th</li>
-      <li>Fr</li>
-      <li>Sa</li>
-      <li>Su</li>
+    <!-- Custom HTML goes here -->
+    <h2>Application Views</h2>
+    <ul>
+      <!-- REPLACE LINKS BELOW -->
+      <!-- Provide a link for each of your mock UI HTML files -->
+      <li><a href="home.html">Home</a></li>
+      <li><a href="calendar.html">Calendar</a></li>
+      <li><a href="manual.html">Manual</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="dragupload.html">Drag Upload</a></li>
+      <li><a href="AddAssignment.html">Add Assignment</a></li>
+      <li><a href="FirstTimeUserUploadPage.html">Cole's Page</a></li>
+      <!-- REPLACE LINKS ABOVE -->
     </ul>
 
-    <ul class="days">
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-      <li>6</li>
-      <li>7</li>
-      <li>8</li>
-      <li>9</li>
-      <li>10</li>
-      <li>11</li>
-      <li>12</li>
-      <li>13</li>
-      <li>14</li>
-      <li>15</li>
-      <li>16</li>
-      <li>17</li>
-      <li>18</li>
-      <li>19</li>
-      <li><span class="active">20</span></li>
-      <li>21</li>
-      <li>22</li>
-      <li>23</li>
-      <li><span class="due">24</span></li>
-      <li>25</li>
-      <li>26</li>
-      <li><span class="due">27</span></li>
-      <li>28</li>
-    </ul>
-
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual
+         files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/bundle.js"></script>
+    <!-- App code -->
+    <script src="js/app.js"></script>
   </body>
 </html>
