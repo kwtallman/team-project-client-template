@@ -1,6 +1,7 @@
 /* Empty for now. :) */
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Home from './components/home';
 
 // Each major browser view user interface must be imported.
 import UI01 from './build/js/ui-01.js';
