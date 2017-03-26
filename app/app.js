@@ -1,9 +1,9 @@
 /* Empty for now. :) */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './components/home';
 
 // Each major browser view user interface must be imported.
+import Home from './Components/home';
 import UI01 from './build/js/ui-01.js';
 import UI02 from './build/js/ui-02.js';
 import UI03 from './build/js/ui-03.js';
@@ -35,7 +35,7 @@ if (document.getElementById('addassignment') !== null) {
   );
 } else if (document.getElementById('home') !== null) {
   ReactDOM.render(
-    <UI05 />,
+    <Home />,
     document.getElementById('home')
   );
 } else if (document.getElementById('manual') !== null) {
