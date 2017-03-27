@@ -9,7 +9,7 @@ export default class Home extends React.Component {
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <form className="navbar-form navbar-left" role="search">
                 <div className="input-group">
-                  <input type="text" className="form-control" placeholder="Search Grumber Events">
+                  <input type="text" className="form-control" placeholder="Search Grumber Events"/>
                   <span className="input-group-btn">
                     <button type="submit" className="btn btn-default">
                       <span className="glyphicon glyphicon-search"></span>
@@ -44,8 +44,9 @@ export default class Home extends React.Component {
               </div>
             </div>
           </div>
+          </div>
         </nav>
-        </div>
+      </div>
     )
   }
 }
