@@ -1,24 +1,31 @@
 /* Empty for now. :) */
 //import React from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Each major browser view user interface must be imported.
 
+import Manual from './Components/manual.js';
 import Home from './Components/home.js';
 import AddAssignment from './Components/addAssignment.js';
 import Colebar from './Components/colebar.js';
 
 // For each view conditionally determine which view to display
 // depending on if the ID is present in the HTML.
-if (document.getElementById('addassignment') !== null) {
+if (document.getElementById('manual') !== null) {
   ReactDOM.render(
-    <AddAssignment />,
-    document.getElementById('addassignment')
+    <Manual />,
+    document.getElementById('manual')
   );
 } else if (document.getElementById('calendar') !== null) {
   ReactDOM.render(
     <UI02 />,
     document.getElementById('calendar')
+  );
+} else if (document.getElementById('addassignment') !== null) {
+  ReactDOM.render(
+    <AddAssignment />,
+    document.getElementById('addassignment')
   );
 } else if (document.getElementById('dragupload') !== null) {
   ReactDOM.render(
@@ -34,15 +41,5 @@ if (document.getElementById('addassignment') !== null) {
   ReactDOM.render(
     <Home />,
     document.getElementById('home')
-  );
-} else if (document.getElementById('manual') !== null) {
-  ReactDOM.render(
-    <UI06 />,
-    document.getElementById('manual')
-  );
-} else if (document.getElementById('profile') !== null) {
-  ReactDOM.render(
-    <UI07 />,
-    document.getElementById('profile')
   );
 }
