@@ -4,10 +4,10 @@ export default class Calendar extends React.Component {
   render() {
     return (
       <div>
-      	<div class="month">
+      	<div className="month">
 		      <ul>
-		        <li class="prev">&#10094;</li>
-		        <li class="next">&#10095;</li>
+		        <li className="prev">&#10094;</li>
+		        <li className="next">&#10095;</li>
 		        <li>
 		          February<br />
 		          <span style="font-size:18px">2017</span>
@@ -15,7 +15,7 @@ export default class Calendar extends React.Component {
 		      </ul>
 		    </div>
 
-		    <ul class="weekdays">
+		    <ul className="weekdays">
 		      <li>Mo</li>
 		      <li>Tu</li>
 		      <li>We</li>
@@ -25,7 +25,7 @@ export default class Calendar extends React.Component {
 		      <li>Su</li>
 		    </ul>
 
-		    <ul class="days">
+		    <ul className="days">
 		      <li>1</li>
 		      <li>2</li>
 		      <li>3</li>
@@ -45,14 +45,14 @@ export default class Calendar extends React.Component {
 		      <li>17</li>
 		      <li>18</li>
 		      <li>19</li>
-		      <li><span class="active">20</span></li>
+		      <li><span className="active">20</span></li>
 		      <li>21</li>
 		      <li>22</li>
 		      <li>23</li>
-		      <li><span class="due">24</span></li>
+		      <li><span className="due">24</span></li>
 		      <li>25</li>
 		      <li>26</li>
-		      <li><span class="due">27</span></li>
+		      <li><span className="due">27</span></li>
 		      <li>28</li>
 		    </ul>
 		</div>
