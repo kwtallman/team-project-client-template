@@ -1,14 +1,17 @@
 import React from 'react';
+import LeftSide from './leftside.js';
 
 export default class Profile extends React.Component{
 
 	render() {
 		return(
 			<div>
+
+				<LeftSide />
 			    <div className="container">
-			      
+
 			      <div className="row">
-			        
+
 			        <div className="col-md-6 left-side-info">
 			          <p>First Last</p>
 
@@ -31,7 +34,7 @@ export default class Profile extends React.Component{
 			          <button id="btn-signup" type="button" className="btn btn-success">Submit</button>
 
 			        </div>
-			        
+
 			        <div className="col-md-6 right-side-info">
 			          <img src="img/profilepic.jpg" />
 			        </div>
