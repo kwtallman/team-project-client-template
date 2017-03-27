@@ -1,8 +1,11 @@
 import React from 'react';
+import LeftSide from './leftside.js';
 
 export default class Manual extends React.Component {
   render() {
     return (
+      <div>
+        <LeftSide />
       <div className="container">
         <p className="headtext">Manual Deadline Entry</p>
         <div className="row">
@@ -56,6 +59,7 @@ export default class Manual extends React.Component {
           </div>
         </div>
       </div>
+    </div>
     )
   }
 }
