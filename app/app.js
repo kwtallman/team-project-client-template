@@ -9,6 +9,7 @@ import Manual from './Components/manual.js';
 import Home from './Components/home.js';
 import AddAssignment from './Components/addAssignment.js';
 import Colebar from './Components/colebar.js';
+import Profile from './Components/profile.js';
 
 // For each view conditionally determine which view to display
 // depending on if the ID is present in the HTML.
@@ -41,5 +42,11 @@ if (document.getElementById('manual') !== null) {
   ReactDOM.render(
     <Home />,
     document.getElementById('home')
+  );
+}
+else if (document.getElementById('profile') !== null) {
+  ReactDOM.render(
+    <Profile />,
+    document.getElementById('profile')
   );
 }
