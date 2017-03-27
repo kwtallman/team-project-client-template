@@ -10,6 +10,7 @@ import Home from './Components/home.js';
 import AddAssignment from './Components/addAssignment.js';
 import Colebar from './Components/colebar.js';
 import Profile from './Components/profile.js';
+import Calendar from './Components/calendar.js';
 
 // For each view conditionally determine which view to display
 // depending on if the ID is present in the HTML.
@@ -20,7 +21,7 @@ if (document.getElementById('manual') !== null) {
   );
 } else if (document.getElementById('calendar') !== null) {
   ReactDOM.render(
-    <UI02 />,
+    <Calendar />,
     document.getElementById('calendar')
   );
 } else if (document.getElementById('addassignment') !== null) {
@@ -43,10 +44,9 @@ if (document.getElementById('manual') !== null) {
     <Home />,
     document.getElementById('home')
   );
-}
-else if (document.getElementById('profile') !== null) {
+} else if (document.getElementById('profile') !== null) {
   ReactDOM.render(
     <Profile />,
     document.getElementById('profile')
   );
-}
+} 
