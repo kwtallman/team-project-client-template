@@ -11,6 +11,8 @@ import AddAssignment from './Components/addAssignment.js';
 import Colebar from './Components/colebar.js';
 import Profile from './Components/profile.js';
 import Calendar from './Components/calendar.js';
+//needed to be imported
+import Colespage from './Components/colespage.js';
 
 // For each view conditionally determine which view to display
 // depending on if the ID is present in the HTML.
@@ -36,7 +38,8 @@ if (document.getElementById('manual') !== null) {
   );
 } else if (document.getElementById('colespage') !== null) {
   ReactDOM.render(
-    <UI04 />,
+    //needed variable name here
+    <Colespage />,
     document.getElementById('colespage')
   );
 } else if (document.getElementById('home') !== null) {
@@ -49,4 +52,4 @@ if (document.getElementById('manual') !== null) {
     <Profile />,
     document.getElementById('profile')
   );
-} 
+}

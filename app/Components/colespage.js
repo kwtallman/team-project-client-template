@@ -10,9 +10,9 @@ export default class Colespage extends React.Component {
                   <button type="button" className="btn btn-danger">Moodle</button><br />
                   <button type="button" className="btn btn-default">Blackboard</button><br />
                   <button type="button" className="btn btn-default">OWL</button><br />
-                  <button type="button" className="btn btn-default">Gradescope</button> <br>
+                  <button type="button" className="btn btn-default">Gradescope</button> <br />
                   <p> Manually upload all other assignments here </p><br />
-                  <button type="button" onclick="window.location='manual.html'" className="btn btn-default">Manual Upload</button>
+                  <button type="button" onClick="window.location='manual.html'" className="btn btn-default">Manual Upload</button>
         </div>
       </div>
       )
