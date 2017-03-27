@@ -1,16 +1,18 @@
 /* Empty for now. :) */
-import React from 'react';
+//import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Each major browser view user interface must be imported.
 
 import Home from './Components/home.js';
+import AddAssignment from './Components/addAssignment.js';
+import Colebar from './Components/colebar.js';
 
 // For each view conditionally determine which view to display
 // depending on if the ID is present in the HTML.
 if (document.getElementById('addassignment') !== null) {
   ReactDOM.render(
-    <UI01 />,
+    <AddAssignment />,
     document.getElementById('addassignment')
   );
 } else if (document.getElementById('calendar') !== null) {
