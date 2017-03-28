@@ -8,7 +8,6 @@ export default class Colebar extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-md-3">
-
               <div className="navbar-icons left-icons">
                 <a className="navbar-brand" href="home.html">
                   <span className="glyphicon glyphicon-home"></span>
@@ -22,13 +21,11 @@ export default class Colebar extends React.Component {
               </div>
             </div>
             <div className="col-md-6">
-
               <div className="grumber-text">
                 <h3>Grumber</h3>
               </div>
             </div>
             <div className="col-md-3">
-
               <div className="navbar-icons right-icons">
                 <a className="navbar-brand dropdown-toggle" data-toggle="dropdown" href="#">
                   <span className="glyphicon glyphicon-tasks"></span></a>

@@ -1,10 +1,12 @@
 import React from 'react';
 import LeftSide from './leftside.js';
+import Colebar from './colebar.js';
 
 export default class Colespage extends React.Component {
   render() {
     return (
       <div>
+        <Colebar />
         <LeftSide />
         <div className="container">
           <div className="row">
