@@ -21,7 +21,7 @@ export default class Dragupload extends React.Component {
 
 
       		<div className="box__uploading">Uploading&hellip;</div>
-      		<div className="box__success">Done! className="box__restart" role="button">Upload more?</a></div>
+      		<div className="box__success">Done! <a className="box__restart" role="button">Upload more?</a></div>
       		<div className="box__error">Error! <span></span>. <a className="box__restart" role="button">Try again!</a></div>
       	</form>
 
