@@ -32,7 +32,9 @@ export default class AddAssignment extends React.Component {
               </div>
               <p> Manually upload all other assignments here </p><br/>
               <button type="button" onClick="window.location='manual.html'" className="btn btn-default">Manual Upload</button>
-            </div>
+                <br/>
+                <button type="button" onClick="window.location='dragupload.html'" className="btn btn-default">Upload File</button>
+          </div>
           </div>
         </div>
       </div>
