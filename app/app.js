@@ -52,4 +52,9 @@ if (document.getElementById('manual') !== null) {
     <Profile />,
     document.getElementById('profile')
   );
+} else if (document.getElementById('colebar') !== null) {
+  ReactDOM.render(
+    <Colebar />,
+    document.getElementById('colebar')
+  );
 }

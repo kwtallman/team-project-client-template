@@ -3,6 +3,7 @@ import React from 'react';
 export default class Colebar extends React.Component {
   render() {
     return (
+      <div>
       <nav className="navbar navbar-fixed-top navbar-default">
         <div className="container">
           <div className="row">
@@ -41,6 +42,7 @@ export default class Colebar extends React.Component {
             </div>
           </div>
         </nav>
+        </div>
     )
   }
 }
