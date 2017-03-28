@@ -18,18 +18,17 @@
 </head>
 <body>
 
-
   <nav class="navbar navbar-fixed-top navbar-default">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
           <!-- Left Aligned Icons -->
           <div class="navbar-icons left-icons">
-            <a class="navbar-brand" href="home.html">
+            <a class="navbar-brand" href="index.html">
               <span class="glyphicon glyphicon-home"></span>
               <a class="navbar-brand" href="calendar.html">
                 <span class="glyphicon glyphicon-calendar"></span>
-                <a class="navbar-brand" href="home.html">
+                <a class="navbar-brand" href="index.html">
                   <span class="glyphicon glyphicon-list-alt"></span>
                 </a>
               </a>
@@ -57,16 +56,38 @@
         </div>
       </div>
     </nav>
+    <!-- Form Upload Buttons -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"> </div>
+        <div class="col-md-4">
+          <div class="btn-group-vertical" role="group">
+            <h3> New Assignments? </h3>
+            <p> Click any button to automatically update your assignment information </p> <br>
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-2">
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-repeat"></span></button><br>
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-repeat"></span></button><br>
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-repeat"></span></button><br>
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-repeat"></span></button><br>
+              </div>
+              <div class="col-md-7">
+                <p class="assignments">Moodle</p>
+                <p class="assignments">Blackboard</p>
+                <p class="assignments">OWL</p>
+                <p class="assignments">Gradescope</p>
+              </div>
+            </div>
+            <p> Manually upload all other assignments here </p><br>
+            <button type="button" onclick="window.location='manual.html'" class="btn btn-default">Manual Upload</button>
+            <br>
+            <button type="button" onclick="window.location='dragupload.html'" class="btn btn-default">Upload File</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div id="leftside"></div>
-    <div id="addassignment"></div>
-
-
-    <footer class="page-footer ">
-        <p class="footer_text">Copyright © 2017 <span class="grumbertext"><b>Grumber</b></span></p>
-     </footer>
-
-     <script src="js/app.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
