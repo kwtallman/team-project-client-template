@@ -13,6 +13,7 @@ import Profile from './Components/profile.js';
 import Calendar from './Components/calendar.js';
 //needed to be imported
 import Colespage from './Components/colespage.js';
+import LeftSide from './Components/leftside.js';
 
 // For each view conditionally determine which view to display
 // depending on if the ID is present in the HTML.
@@ -56,5 +57,10 @@ if (document.getElementById('manual') !== null) {
   ReactDOM.render(
     <Colebar />,
     document.getElementById('colebar')
+  );
+} else if (document.getElementById('leftside') !== null) {
+  ReactDOM.render(
+    <LeftSide />,
+    document.getElementById('leftside')
   );
 }
