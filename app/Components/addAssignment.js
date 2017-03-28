@@ -1,6 +1,6 @@
 import React from 'react';
-import Colebar from 'colebar';
-import LeftSide from 'leftside';
+import Colebar from './colebar';
+import LeftSide from './leftside';
 
 export default class AddAssignment extends React.Component {
   render() {
