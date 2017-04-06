@@ -24,9 +24,11 @@ export default class Profile extends React.Component{
 			          <div className="input-customize">
 			            <input type="password" className="form-control" name="old_password" placeholder="Type old password" />
 			          </div>
+			          <br />
 			          <div className="input-customize">
 			            <input type="password" className="form-control" name="new_password" placeholder="Type new password" />
 			          </div>
+			          <br />
 			          <div className="input-customize">
 			            <input type="password" className="form-control" name="confirm_password" placeholder="Confirm new password" />
 			          </div>
@@ -35,7 +37,7 @@ export default class Profile extends React.Component{
 
 			        </div>
 
-			        <div className="col-md-6 right-side-info">
+			        <div className="col-md-5 right-side-info">
 			          <img src="img/profilepic.jpg" />
 			        </div>
 			      </div>

@@ -1,9 +1,11 @@
 import React from 'react';
+import Colebar from './colebar.js';
 
 export default class Home extends React.Component {
   render() {
     return (
       <div>
+        <Colebar />
         <nav className="second-navbar navbar">
           <div className="container">
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

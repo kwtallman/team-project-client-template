@@ -11,6 +11,7 @@ import AddAssignment from './Components/addAssignment.js';
 import Colebar from './Components/colebar.js';
 import Profile from './Components/profile.js';
 import Calendar from './Components/calendar.js';
+import Dragupload from './Components/dragupload.js';
 //needed to be imported
 import Colespage from './Components/colespage.js';
 import LeftSide from './Components/leftside.js';
@@ -62,5 +63,10 @@ if (document.getElementById('manual') !== null) {
   ReactDOM.render(
     <LeftSide />,
     document.getElementById('leftside')
+  );
+} else if (document.getElementById('dragupload') !== null) {
+  ReactDom.render(
+    <Dragupload />,
+    document.getElementById('dragupload')
   );
 }
