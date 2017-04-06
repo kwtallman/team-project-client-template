@@ -15,25 +15,22 @@ var initialData = {
       "accounts": 2,
       "assignmnets": 2
     },
-    "3": {
-      "_id": 3,
-      "userName": "Eric",
-      "accounts": 3,
-      "assignmnets": 3
-    },
-    "4": {
-      "_id": 4,
-      "userName": "Kyle",
-      "accounts": 4,
-      "assignmnets": 4
-    },
-    "5": {
-      "_id": 5,
-      "userName": "Zach",
-      "accounts": 5,
-      "assignmnets": 5
-    }
-  },
-  "accounts": {
 
+  "accounts": {
+    "1": {
+      "type": "Moodle, Blackboard",
+      "userEmail": "cole.arvid@something.edu",
+      "password": "cmpsci326"
+    },
+    "2": {
+      "type": "OWL",
+      "userEmail": "elliot.crunch@something.edu",
+      "password": "crunchy"
+    },
+
+  "assignments": {
+    "1": {
+      
+    }
+  }
   }
