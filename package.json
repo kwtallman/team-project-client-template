@@ -22,7 +22,9 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "moment": "^2.18.1",
     "react": "^0.14.8",
+    "react-big-calendar": "^0.13.0",
     "react-dom": "^0.14.8"
   }
 }

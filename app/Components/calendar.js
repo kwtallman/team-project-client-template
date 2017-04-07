@@ -3,19 +3,20 @@ import BigCalendar from 'react-big-calendar';
 import moment from 'moment';
 import Colebar from './colebar.js'
 
-BigCalendar.setLocalizer(
-  BigCalendar.momentLocalizer(moment)
-);
+BigCalendar.momentLocalizer(moment);
 
 export default class Calendar extends React.Component {
 	
   render() {
     return (
       <div>
-      <Colebar />
-      	Hello world
-
-      	<BigCalendar />
+        <Colebar />
+        hello
+        <BigCalendar
+          events = {myEventsList}
+          startAccessor='startDate'
+          endAccessor='endDate'
+          />
       	
 		</div>
 		)
