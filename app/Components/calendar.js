@@ -1,24 +1,17 @@
 import React from 'react';
 import BigCalendar from 'react-big-calendar';
-import moment from 'moment';
-import Colebar from './colebar.js'
+import events from '../events';
 
-BigCalendar.momentLocalizer(moment);
-
-export default class Calendar extends React.Component {
-	
-  render() {
+let Basic = React.createClass({
+  render(){
     return (
-      <div>
-        <Colebar />
-        hello
-        <BigCalendar
-          events = {myEventsList}
-          startAccessor='startDate'
-          endAccessor='endDate'
-          />
-      	
-		</div>
-		)
-	}
-}
+      <BigCalendar
+        {...this.props}
+        events={events}
+        defaultDate={new Date(2015, 3, 1)}
+      />
+    )
+  }
+})
+
+export default Basic;

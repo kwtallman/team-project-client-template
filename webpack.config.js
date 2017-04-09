@@ -1,6 +1,7 @@
 var path = require('path');
 
 module.exports = {
+
   // The main "entry point" of your web app. WebPack will pack every module that
   // this file depends on (and its dependencies depend on).
   entry: './app/app.js',
@@ -39,6 +40,13 @@ module.exports = {
           // HTML in your React modules into code.
           presets: ['es2015', 'react']
         }
+      },
+      {
+        test: /\.less$/,
+        loaders: [
+        'style-loader',
+        'css-loader',
+        'less-loader']
       }
     ]
   }
