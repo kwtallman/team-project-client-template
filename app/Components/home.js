@@ -1,11 +1,15 @@
 import React from 'react';
 import Colebar from './colebar.js';
+import Sidebar from './sidebar.js';
+import Footer from './footer.js';
 
 export default class Home extends React.Component {
   render() {
     return (
       <div>
+        <Sidebar />
         <Colebar />
+        <Footer />
         <nav className="second-navbar navbar">
           <div className="container">
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

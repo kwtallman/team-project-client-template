@@ -1,13 +1,15 @@
 import React from 'react';
 import Colebar from './colebar';
-import LeftSide from './leftside';
+import Sidebar from './sidebar';
+import Footer from './footer.js';
 
 export default class AddAssignment extends React.Component {
   render() {
     return (
 <div>
-      <Colebar />
-      <LeftSide />
+  <Sidebar />
+  <Colebar />
+  <Footer />
       <div className="container">
         <div className="row">
           <div className="col-md-4"> </div>

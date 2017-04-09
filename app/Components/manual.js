@@ -1,5 +1,5 @@
 import React from 'react';
-import LeftSide from './leftside.js';
+import Sidebar from './sidebar.js';
 import Colebar from './colebar.js';
 import Footer from './footer.js';
 
@@ -7,7 +7,7 @@ export default class Manual extends React.Component {
   render() {
     return (
       <div>
-        <LeftSide />
+        <Sidebar />
         <Colebar />
         <Footer />
       <div className="container">

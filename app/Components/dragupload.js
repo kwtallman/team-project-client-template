@@ -1,11 +1,15 @@
 import React from 'react';
 import Colebar from './colebar';
+import Footer from './footer.js';
+import Sidebar from './sidebar.js';
 
 export default class Dragupload extends React.Component {
   render() {
     return (
       <div>
-      <Colebar />
+        <Sidebar />
+        <Colebar />
+        <Footer />
       <div className="container" role="main">
 
       	<form method="post" novalidate className="box">

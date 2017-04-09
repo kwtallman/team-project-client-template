@@ -4,7 +4,8 @@ export default class LeftSide extends React.Component {
   render() {
     return (
       <div className="col-md-1">
-        <ul className="nav nav-pills nav-stacked">
+        <ul className="nav nav-pills nav-stacked sidebar">
+          <br />
           <li role="presentation">Profile</li>
           <li role="presentation"><a href="#"><span className="glyphicon glyphicon-user"></span> Edit</a></li>
           <li role="presentation">Assignments</li>
