@@ -3,13 +3,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import localizer from 'react-big-calendar/lib/localizers/globalize';
+
+import 'react-big-calendar/lib/less/styles.less';
 // Each major browser view user interface must be imported.
 
 import Manual from './Components/manual.js';
 import Home from './Components/home.js';
 import AddAssignment from './Components/addAssignment.js';
 import Profile from './Components/profile.js';
-import Calendar from './Components/calendar.js';
+import CalendarTest from './Components/calendartest.js';
 import Dragupload from './Components/dragupload.js';
 import Colespage from './Components/colespage.js';
 
@@ -22,7 +25,7 @@ if (document.getElementById('manual') !== null) {
   );
 } else if (document.getElementById('calendar') !== null) {
   ReactDOM.render(
-    <Calendar />,
+    <CalendarTest />,
     document.getElementById('calendar')
   );
 } else if (document.getElementById('addassignment') !== null) {
