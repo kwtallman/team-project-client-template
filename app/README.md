@@ -9,3 +9,5 @@ npm install --save-dev css-loader
 npm install --save-dev less-loader less
 
 npm install style-loader --save-dev
+
+npm install moment
