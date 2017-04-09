@@ -12,7 +12,6 @@ import Manual from './Components/manual.js';
 import Home from './Components/home.js';
 import AddAssignment from './Components/addAssignment.js';
 import Profile from './Components/profile.js';
-import Calendar from './Components/calendar.js';
 import Dragupload from './Components/dragupload.js';
 import Colespage from './Components/colespage.js';
 
@@ -22,11 +21,6 @@ if (document.getElementById('manual') !== null) {
   ReactDOM.render(
     <Manual />,
     document.getElementById('manual')
-  );
-} else if (document.getElementById('calendar') !== null) {
-  ReactDOM.render(
-    <Calendar />,
-    document.getElementById('calendar')
   );
 } else if (document.getElementById('addassignment') !== null) {
   ReactDOM.render(

@@ -4,6 +4,8 @@ import Sidebar from './sidebar.js';
 import Colebar from './colebar.js';
 import Footer from './footer.js';
 
+import {Link} from 'react-router';
+
 export default class Manual extends React.Component {
   render() {
     return (

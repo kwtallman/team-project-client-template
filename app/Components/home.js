@@ -1,60 +1,36 @@
 import React from 'react';
-//import {Link} from 'react-router';
-//import {unixTimeToString} from '../utils.js';
-import Colebar from './colebar.js';
-import Sidebar from './sidebar.js';
+import ReactDOM from 'react-dom';
+import events from '../events';
+import Colebar from './Colebar.js'
 import Footer from './footer.js';
 
+import BigCalendar from 'react-big-calendar';
+import moment from 'moment';
+
+// Setup the localizer by providing the moment (or globalize) Object
+// to the correct localizer.
+BigCalendar.momentLocalizer(moment); // or globalizeLocalizer
+
+
+
 export default class Home extends React.Component {
+    constructor(props, context) {
+      super(props, context);
+    }
+
   render() {
     return (
-      <div>
-        <Sidebar />
+     <div>
         <Colebar />
+        <div style={{height: 400}}>
+         <BigCalendar
+            events={events}
+            startAccessor={new Date(2016, 3, 1)}
+            endAccessor={new Date(2017, 3, 1)}
+        />
+        </div>
         <Footer />
-        <nav className="second-navbar navbar">
-          <div className="container">
-            <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <form className="navbar-form navbar-left" role="search">
-                <div className="input-group">
-                  <input type="text" className="form-control" placeholder="Search Grumber Events"/>
-                  <span className="input-group-btn">
-                    <button type="submit" className="btn btn-default">
-                      <span className="glyphicon glyphicon-search"></span>
-                    </button>
-                  </span>
-                </div>
-              </form>
-
-            <div className="nav navbar-nav navbar-right">
-
-              <div className="btn-toolbar" role="toolbar">
-
-                <div className="btn-group" role="group">
-                  <a href="calendar.html" type="button" className="btn btn-default navbar-btn">
-                  Calendar View
-                  </a>
-                </div>
-
-                <div className="btn-group" role="group">
-                  <button type="button" className="btn btn-default dropdown-toggle navbar-btn"
-                        data-toggle="dropdown">
-                      Filter
-                    <span className="caret"></span>
-                  </button>
-                  <ul className="dropdown-menu">
-                    Filter:
-                    <li><a href="#">By Due Date</a></li>
-                    <li><a href="#">By Class</a></li>
-                    <li><a href="#">By Type (Event, Assignment, or Appointment)</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </nav>
       </div>
-    )
+    );
   }
 }
