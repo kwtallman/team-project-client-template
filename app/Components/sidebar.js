@@ -15,6 +15,8 @@ export default class LeftSide extends React.Component {
           <li role="presentation">Entry</li>
           <li role="presentation"><a href="#"><span className="glyphicon glyphicon-plus"></span> Manual</a></li>
           <li role="presentation"><a href="#"><span className="glyphicon glyphicon-signal"></span> Automatic</a></li>
+          <li role="presentation">DEBUG</li>
+          <li role="presentation" id="db-reset"></li>
         </ul>
       </div>
     )
