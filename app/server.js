@@ -10,3 +10,9 @@ function emulateServerReturn(data, cb) {
     cb(data);
   }, 4);
 }
+
+function getHomeSync(assignListId) {
+  var assignList = readDocument('assignList', assignListId);
+  assignList.assignment = assignList.assignment.map((id) => readDocument('users', id));
+  assignList.assignment.assignId = readDocument('users', assignList.assignmnet.assignId);
+}

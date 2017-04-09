@@ -8,14 +8,14 @@ var initialData = {
     "1": {
       "_id": 1,
       "userName": "Cole",
-      "accounts": 1,
+      "accounts": 2,
       "assignList": 1
     },
     "2": {
       "_id": 2,
       "userName": "Elliot",
-      "accounts": 2,
-      "assignList": 2
+      "accounts": 1,
+      "assignList": 1
     }
   },
 
@@ -39,15 +39,16 @@ var initialData = {
 
   "assignList": {
     "1": {
+      "_id": 1,
       "assignmnet": [
         {
-        "_id": 1,
+        "assignId": 1,
         "dueDate": 1492041540,
         "course": "CmpSci326",
         "aLink": "https://moodle.umass.edu/"
         },
         {
-        "_id": 2,
+        "assignId": 2,
         "dueDate": 1491523140,
         "course": "English101",
         "aLink": "https://uma.umassonline.net/"
@@ -55,15 +56,16 @@ var initialData = {
       ]
     },
     "2": {
+      "_id": 2,
       "assignmnet": [
         {
-        "_id": 1,
+        "assignId": 1,
         "dueDate": 1492041540,
         "course": "CmpSci326",
         "aLink": "https://moodle.umass.edu/"
         },
         {
-        "_id": 2,
+        "assignId": 2,
         "dueDate": 1491523140,
         "course": "English101",
         "aLink": "https://uma.umassonline.net/"
