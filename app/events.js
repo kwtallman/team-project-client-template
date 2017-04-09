@@ -2,8 +2,8 @@ export default [
   {
     'title': 'All Day Event',
     'allDay': true,
-    'start': new Date(2016, 3, 0),
-    'end': new Date(2016, 3, 1)
+    'start': new Date(2017, 4, 4),
+    'end': new Date(2017, 5, 5)
   },
   {
     'title': 'Long Event',
