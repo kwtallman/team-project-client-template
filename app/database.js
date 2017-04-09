@@ -101,9 +101,6 @@ export function addDocument(collectionName, newDoc) {
   return newDoc;
 }
 
-/**
- * Reset our browser-local database.
- */
 export function resetDatabase() {
   localStorage.setItem('grumber_data', JSON.stringify(initialData));
   data = JSONClone(initialData);
