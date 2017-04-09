@@ -1,12 +1,11 @@
 body
 
 .footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  position:fixed;
+  bottom:0px;
   left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
+  right: 0;
+  background-color:#171717;
+  color:white;
 
 }
