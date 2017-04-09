@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from './sidebar.js';
 import Footer from './footer.js';
+import Colebar from './colebar.js';
 
 export default class Profile extends React.Component{
 

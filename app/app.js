@@ -47,7 +47,7 @@ if (document.getElementById('manual') !== null) {
     document.getElementById('profile')
   );
 }  else if (document.getElementById('dragupload') !== null) {
-  ReactDom.render(
+  ReactDOM.render(
     <Dragupload />,
     document.getElementById('dragupload')
   );
