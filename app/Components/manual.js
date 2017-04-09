@@ -1,17 +1,19 @@
 import React from 'react';
 import LeftSide from './leftside.js';
+import Colebar from './colebar.js';
 
 export default class Manual extends React.Component {
   render() {
     return (
       <div>
         <LeftSide />
+        <Colebar />
       <div className="container">
         <p className="headtext">Manual Deadline Entry</p>
         <div className="row">
           <div className="col-md-4"></div>
           <div className="col-md-4">
-            <form>
+            <form method="post">
               <div className="form-group row">
                 <label htmlFor="classinput" className="col-2 col-form-label">Class</label>
                 <div className="col-10">
