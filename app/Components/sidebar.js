@@ -4,7 +4,8 @@ export default class LeftSide extends React.Component {
   render() {
     return (
       <div className="col-md-1">
-        <ul className="nav nav-pills nav-stacked">
+        <ul className="nav nav-pills nav-stacked sidebar">
+          <br />
           <li role="presentation">Profile</li>
           <li role="presentation"><a href="#"><span className="glyphicon glyphicon-user"></span> Edit</a></li>
           <li role="presentation">Assignments</li>
@@ -14,6 +15,8 @@ export default class LeftSide extends React.Component {
           <li role="presentation">Entry</li>
           <li role="presentation"><a href="#"><span className="glyphicon glyphicon-plus"></span> Manual</a></li>
           <li role="presentation"><a href="#"><span className="glyphicon glyphicon-signal"></span> Automatic</a></li>
+          <li role="presentation">DEBUG</li>
+          <li role="presentation" id="db-reset"></li>
         </ul>
       </div>
     )

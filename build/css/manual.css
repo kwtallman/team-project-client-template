@@ -1,27 +1,10 @@
 body
 
-.padding {
-  padding-bottom: 60px;
-}
-
 .headtext {
   text-align: center;
   font-size: 200%;
   color: #FFAEA8;
   padding-bottom: 30px;
-}
-
-.page-footer{
-      text-align: center;
-}
-
-footer.page-footer{
-    margin-top: 0;
-}
-
-.footer_text{
-    margin-bottom: 0;
-    padding-bottom: 20px;
 }
 
 .grumbertext {

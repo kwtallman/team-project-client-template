@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+var grumber = null;
+
 var initialData = {
   "users": {
     "1": {
@@ -71,7 +73,7 @@ var initialData = {
   }
 };
 
-var data = JSON.parse(localStorage.getItem('grumber_data'));
+var data = JSON.parse(localStorage.getItem(grumber));
 if (data === null) {
   data = JSONClone(initialData);
 }
@@ -87,7 +89,7 @@ export function readDocument(collection, id) {
 export function writeDocument(collection, changedDocument) {
   var id = changedDocument._id;
   data[collection][id] = JSONClone(changedDocument);
-  localStorage.setItem('grumber_data', JSON.stringify(data));
+  localStorage.setItem(grumber, JSON.stringify(data));
 }
 
 export function addDocument(collectionName, newDoc) {
@@ -102,7 +104,7 @@ export function addDocument(collectionName, newDoc) {
 }
 
 export function resetDatabase() {
-  localStorage.setItem('grumber_data', JSON.stringify(initialData));
+  localStorage.setItem(grumber, JSON.stringify(initialData));
   data = JSONClone(initialData);
 }
 
@@ -123,5 +125,5 @@ class ResetDatabase extends React.Component {
 
 ReactDOM.render(
   <ResetDatabase />,
-  document.getElementById('fb-db-reset')
+  document.getElementById('db-reset')
 );

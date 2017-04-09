@@ -1,5 +1,6 @@
 import React from 'react';
-import LeftSide from './leftside.js';
+import Sidebar from './sidebar.js';
+import Footer from './footer.js';
 
 export default class Profile extends React.Component{
 
@@ -7,7 +8,9 @@ export default class Profile extends React.Component{
 		return(
 			<div>
 
-				<LeftSide />
+				<Sidebar />
+        <Colebar />
+        <Footer />
 			    <div className="container">
 
 			      <div className="row">

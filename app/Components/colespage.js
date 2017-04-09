@@ -1,13 +1,15 @@
 import React from 'react';
-import LeftSide from './leftside.js';
+import Sidebar from './sidebar.js';
 import Colebar from './colebar.js';
+import Footer from './footer.js';
 
 export default class Colespage extends React.Component {
   render() {
     return (
       <div>
+        <Sidebar />
         <Colebar />
-        <LeftSide />
+        <Footer />
         <div className="container">
           <div className="row">
             <div className="col-md-4"> </div>
