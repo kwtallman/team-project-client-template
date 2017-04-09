@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import events from '../events';
 import Colebar from './Colebar.js'
+import Footer from './footer.js';
 
 import BigCalendar from 'react-big-calendar';
 import moment from 'moment';
@@ -28,6 +29,7 @@ export default class Calendar extends React.Component {
             endAccessor={new Date(2017, 3, 1)}
         />
         </div>
+        <Footer />
       </div>
     );
   }

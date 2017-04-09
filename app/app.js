@@ -12,7 +12,7 @@ import Manual from './Components/manual.js';
 import Home from './Components/home.js';
 import AddAssignment from './Components/addAssignment.js';
 import Profile from './Components/profile.js';
-import CalendarTest from './Components/calendartest.js';
+import Calendar from './Components/calendar.js';
 import Dragupload from './Components/dragupload.js';
 import Colespage from './Components/colespage.js';
 
@@ -25,7 +25,7 @@ if (document.getElementById('manual') !== null) {
   );
 } else if (document.getElementById('calendar') !== null) {
   ReactDOM.render(
-    <CalendarTest />,
+    <Calendar />,
     document.getElementById('calendar')
   );
 } else if (document.getElementById('addassignment') !== null) {
