@@ -15,7 +15,7 @@ var initialData = {
         "email": "kyledumpman@dump.net"
       }
     },
-    
+
     "2": {
       "_id": 2,
       "accounts": 1,
@@ -49,7 +49,7 @@ var initialData = {
   "assignList": {
     "1": {
       "_id": 1,
-      "assignmnet": [
+      "assignment": [
         {
         "assignId": 1,
         "dueDate": 1492041540,
@@ -66,7 +66,7 @@ var initialData = {
     },
     "2": {
       "_id": 2,
-      "assignmnet": [
+      "assignment": [
         {
         "assignId": 1,
         "dueDate": 1492041540,
