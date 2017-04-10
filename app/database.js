@@ -9,9 +9,10 @@ var initialData = {
       "_id": 1,
       "accounts": 2,
       "assignList": 1,
+      "userPass": "cuck",
       "contents": {
-        "userName": "Cole",
-        "userPass": "cuck",
+        "first": "Cole",
+        "username": "roberto5",
         "email": "kyledumpman@dump.net"
       }
     },
@@ -20,9 +21,10 @@ var initialData = {
       "_id": 2,
       "accounts": 1,
       "assignList": 1,
+      "userPass": "monkey",
       "contents": {
-        "userName": "Elliot",
-        "userPass": "monkey",
+        "first": "Elliot",
+        "username": "colesLaughSucks",
         "email": "kyleshitman@shit.net"
       }
     }
