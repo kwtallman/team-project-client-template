@@ -3,10 +3,44 @@ import React from 'react';
 import Sidebar from './sidebar.js';
 import Colebar from './colebar.js';
 import Footer from './footer.js';
+import NewAssign from '../server.js'
 
 import {Link} from 'react-router';
 
 export default class Manual extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      assignment= []
+    };
+  }
+
+  //componentDidMount() {
+    //this.refresh();
+  //}
+
+  handleSubmitClick(clickEvent) {
+  // Stop the event from propagating up the DOM tree, since we handle it here.
+  // Also prevents the link click from causing the page to scroll to the top.
+  clickEvent.preventDefault();
+  // 0 represents the 'main mouse button' -- typically a left click
+  // https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/button
+  if (clickEvent.button === 0) {
+    // Callback function for both the like and unlike cases.
+    var callbackFunction = (addAssign) => {
+      // setState will overwrite the 'likeCounter' field on the current
+      // state, and will keep the other fields in-tact.
+      // This is called a shallow merge:
+      // https://facebook.github.io/react/docs/component-api.html#setstate
+      this.setState({assignment: addAssign});
+    };
+
+    NewAssign(this.state._id, 1, callbackFunction);
+
+  }
+}
+
   render() {
     return (
       <div>
@@ -75,7 +109,7 @@ export default class Manual extends React.Component {
                   <input className="form-control" type="color" value="Ex: CS326" id="colorinput" />
                 </div>
               </div>
-              <button type="submit" className= "btn btn-primary center-block">Submit</button> <br />
+                <button type="submit" className= "btn btn-primary center-block" onClick={(e) => this.handleSubmitClick(e)}>Submit</button>
               <p className="padding"> </p>
             </form>
           </div>

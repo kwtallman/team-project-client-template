@@ -1,4 +1,5 @@
 import React from 'react';
+import ResetDatabase from '../database';
 
 export default class LeftSide extends React.Component {
   render() {
@@ -16,7 +17,7 @@ export default class LeftSide extends React.Component {
           <li role="presentation"><a href="#"><span className="glyphicon glyphicon-plus"></span> Manual</a></li>
           <li role="presentation"><a href="#"><span className="glyphicon glyphicon-signal"></span> Automatic</a></li>
           <li role="presentation">DEBUG</li>
-          <li role="presentation" id="db-reset"></li>
+          <li role="presentation" id="db-reset"><ResetDatabase /></li>
         </ul>
       </div>
     )

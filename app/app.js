@@ -19,7 +19,7 @@ import Colespage from './Components/colespage.js';
 // depending on if the ID is present in the HTML.
 if (document.getElementById('manual') !== null) {
   ReactDOM.render(
-    <Manual />,
+    <Manual user={1}/>,
     document.getElementById('manual')
   );
 } else if (document.getElementById('addassignment') !== null) {

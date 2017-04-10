@@ -11,6 +11,17 @@ function emulateServerReturn(data, cb) {
   }, 4);
 }
 
+export function NewAssign(assignListId, userId, cb) {
+  var assignListOb = readDocument('assignList', assignListId);
+  // Normally, we would check if the user already liked this comment.
+  // But we will not do that in this mock server.
+  // ('push' modifies the array by adding userId to the end)
+  feedItem.likeCounter.push(userId);
+  writeDocument('assignList', assignListOb);
+  // Return a resolved version of the likeCounter
+  emulateServerReturn(assignList.likeCounter.map((userId) => readDocument('users', userId)), cb);
+}
+
 function getProfileSync(assignListId) {
   var assignList = readDocument('assignList', assignListId);
   assignList.assignment = assignList.assignment.map((id) => readDocument('users', id));

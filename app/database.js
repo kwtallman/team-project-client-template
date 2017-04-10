@@ -10,11 +10,11 @@ var initialData = {
       "accounts": 2,
       "assignList": 1,
       "userPass": "duck",
-      "contents": {
+      "contents": [
         "first": "Cole",
         "username": "roberto5",
         "email": "cole@cole.com"
-      }
+      ]
     },
 
     "2": {
@@ -22,11 +22,11 @@ var initialData = {
       "accounts": 1,
       "assignList": 1,
       "userPass": "monkey",
-      "contents": {
+      "contents": [
         "first": "Elliot",
-        "username": "coooooleedfromnt",
+        "username": "coooooleedfront",
         "email": "kylekyle@kyle.t"
-      }
+      ]
     }
   },
 
@@ -124,7 +124,7 @@ export function resetDatabase() {
 /**
  * Reset database button.
  */
-class ResetDatabase extends React.Component {
+export default class ResetDatabase extends React.Component {
   render() {
     return (
       <button className="btn btn-default" type="button" onClick={() => {
@@ -136,7 +136,7 @@ class ResetDatabase extends React.Component {
   }
 }
 
-ReactDOM.render(
+/**ReactDOM.render(
   <ResetDatabase />,
   document.getElementById('db-reset')
-);
+);*/
