@@ -11,8 +11,6 @@ import moment from 'moment';
 // to the correct localizer.
 BigCalendar.momentLocalizer(moment); // or globalizeLocalizer
 
-
-
 export default class Home extends React.Component {
     constructor(props, context) {
       super(props, context);

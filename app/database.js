@@ -9,13 +9,15 @@ var initialData = {
       "_id": 1,
       "userName": "Cole",
       "accounts": 2,
-      "assignList": 1
+      "assignList": 1,
+      "email": "bobbyarvs@otaku.weeb"
     },
     "2": {
       "_id": 2,
       "userName": "Elliot",
       "accounts": 1,
-      "assignList": 1
+      "assignList": 1,
+      "email": "bigolcole@tinder.net"
     }
   },
 
