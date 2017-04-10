@@ -6,7 +6,29 @@ body
   color: #FFAEA8;
   padding-bottom: 30px;
 }
-
+.makeHidden{
+  visibility: hidden;
+}
+.boxShape{
+  height:300px;
+  width:200px;
+  background:  #C7EFCF; /* Just so we can see it */
+  position: absolute;
+  top: 150px;
+  left: 150%;  /* Put the left edge on the horizontal center */
+  margin-left: 148px;/
+  text-align: center;
+  margin: 0 auto;
+}
+.textAlign{
+  text-align: center;
+}
+.box__uploading,
+.box__success,
+.box__error
+{
+  display: none;
+}
 .grumbertext {
     color: #FFAEA8;
     margin-bottom: 0;
