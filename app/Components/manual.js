@@ -12,7 +12,7 @@ export default class Manual extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      assignment= []
+      assignment: []
     };
   }
 
