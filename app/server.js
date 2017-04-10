@@ -22,15 +22,15 @@ function getProfileSync(assignListId) {
 
 export function getProfileData(user, cb) {
   // Get the User object with the id "user".
-  var userData = readDocument('users', user);
+  var userId = readDocument('users', user);
   // Get the Feed object for the user.
-  var feedData = readDocument('feeds', userData.);
+  var profData = readDocument('users', userId.contents);
   // Map the Feed's FeedItem references to actual FeedItem objects.
   // Note: While map takes a callback function as an argument, it is
   // synchronous, not asynchronous. It calls the callback immediately.
-  feedData.contents = feedData.contents.map(getFeedItemSync);
+  profData.contents = profData.contents.map(getProfileSync);
   // Return FeedData with resolved references.
   // emulateServerReturn will emulate an asynchronous server operation, which
   // invokes (calls) the "cb" function some time in the future.
-  emulateServerReturn(feedData, cb);
+  emulateServerReturn(profData, cb);
 }
