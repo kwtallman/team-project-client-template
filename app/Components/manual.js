@@ -44,6 +44,21 @@ export default class Manual extends React.Component {
                   <input className="form-control" type="date" value="2017-02-25" id="dateinput" />
                 </div>
               </div>
+              <div className="container" role="main">
+
+                <div className="boxShape">
+                  <input type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
+                  <label htmlFor="file" className="textAlign"><strong>Choose a file</strong></label>
+                  <br />
+                  <button type="submit" className="btn btn-default">Upload</button>
+                    <div className="box__uploading">Uploading&hellip;</div>
+                    <div className="box__success">Done! <a className="box__restart" role="button">Upload more?</a></div>
+                    <div className="box__error">Error! <span></span>. <a className="box__restart" role="button">Try again!</a></div>
+                </div>
+
+
+            </div>
+
               <div className="form-group row">
                 <label htmlFor="timeinput" className="col-2 col-form-label">Deadline Time</label>
                 <div className="col-10">
