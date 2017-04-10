@@ -40,8 +40,7 @@ if (document.getElementById('manual') !== null) {
   );
 } else if (document.getElementById('profile') !== null) {
   ReactDOM.render(
-    <Profile />,
-    document.getElementById('profile')
+    <Profile user={1} />
   );
 }  else if (document.getElementById('dragupload') !== null) {
   ReactDOM.render(

@@ -9,13 +9,17 @@ var initialData = {
       "_id": 1,
       "userName": "Cole",
       "accounts": 2,
-      "assignList": 1
+      "assignList": 1,
+      "userPass": "cuck",
+      "email": "kyledumpman@dump.net"
     },
     "2": {
       "_id": 2,
       "userName": "Elliot",
       "accounts": 1,
-      "assignList": 1
+      "assignList": 1,
+      "userPass": "monkey",
+      "email": "kyleshitman@shit.net"
     }
   },
 
