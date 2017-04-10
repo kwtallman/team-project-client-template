@@ -5,27 +5,26 @@ import Colebar from './colebar.js';
 import {getProfileData} from '../server';
 
 export default class Profile extends React.Component{
+	constructor(props) {
+    super(props);
+    this.state = {
+      contents: []
+    };
+  }
 
 	render() {
 		return(
 			<div>
-
 				<Sidebar />
         <Colebar />
         <Footer />
 			    <div className="container">
-
 			      <div className="row">
-
 			        <div className="col-md-6 left-side-info">
 			          <p>First Last</p>
-
 			          <p>username</p>
-
 			          <p>email@umass.edu</p>
-
 			          <p>Change password:</p>
-
 			          <div className="input-customize">
 			            <input type="password" className="form-control" name="old_password" placeholder="Type old password" />
 			          </div>
@@ -39,9 +38,7 @@ export default class Profile extends React.Component{
 			          </div>
 			          <br />
 			          <button id="btn-signup" type="button" className="btn btn-success">Submit</button>
-
-			        </div>
-
+			        </div> 
 			        <div className="col-md-5 right-side-info">
 			          <img src="img/profilepic.jpg" />
 			        </div>
