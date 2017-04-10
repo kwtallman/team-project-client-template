@@ -9,20 +9,22 @@ var initialData = {
       "_id": 1,
       "accounts": 2,
       "assignList": 1,
+      "userPass": "cuck",
       "contents": {
-        "userName": "Cole",
-        "userPass": "cuck",
+        "first": "Cole",
+        "username": "roberto5",
         "email": "kyledumpman@dump.net"
       }
     },
-    
+
     "2": {
       "_id": 2,
       "accounts": 1,
       "assignList": 1,
+      "userPass": "monkey",
       "contents": {
-        "userName": "Elliot",
-        "userPass": "monkey",
+        "first": "Elliot",
+        "username": "colesLaughSucks",
         "email": "kyleshitman@shit.net"
       }
     }
@@ -49,7 +51,7 @@ var initialData = {
   "assignList": {
     "1": {
       "_id": 1,
-      "assignmnet": [
+      "assignment": [
         {
         "assignId": 1,
         "dueDate": 1492041540,
@@ -66,7 +68,7 @@ var initialData = {
     },
     "2": {
       "_id": 2,
-      "assignmnet": [
+      "assignment": [
         {
         "assignId": 1,
         "dueDate": 1492041540,
