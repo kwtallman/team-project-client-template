@@ -1,10 +1,12 @@
 import React from 'react';
-import ResetDatabase from '../database';
+import ResetDatabase from '../database.js';
 
 export default class LeftSide extends React.Component {
   render() {
     return (
       <div className="col-md-1">
+      <div id="root"></div>
+      <div id="db-reset"></div>
         <ul className="nav nav-pills nav-stacked sidebar">
           <br />
           <li role="presentation">Profile</li>
@@ -17,7 +19,7 @@ export default class LeftSide extends React.Component {
           <li role="presentation"><a href="#"><span className="glyphicon glyphicon-plus"></span> Manual</a></li>
           <li role="presentation"><a href="#"><span className="glyphicon glyphicon-signal"></span> Automatic</a></li>
           <li role="presentation">DEBUG</li>
-          <li role="presentation" id="db-reset"><ResetDatabase /></li>
+          
         </ul>
       </div>
     )

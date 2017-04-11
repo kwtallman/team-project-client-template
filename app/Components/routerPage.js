@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class routerPage extends React.component {
+export default class routerPage extends React.Component {
   render(){
     return (
       <div>
