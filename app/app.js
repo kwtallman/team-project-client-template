@@ -1,4 +1,4 @@
-/* Empty for now. :) */
+
 //import React from 'react';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -21,9 +21,10 @@ ReactDOM.render(
       <IndexRoute component = {Home} />
       <Route path = "/home.html" component = {Home} />
       <Route path = "/manual.html" component = {Manual} />
-      <Route path = "/addAssignment.html" component = {AddAssignment} />
+      <Route path = "/AddAssignment.html" component = {AddAssignment} />
       <Route path = "/profile.html" component = {Profile} />
       <Route path = "/colespage.html" component = {Colespage} />
+      <Route path = "/FirstTimeUserUploadPage.html" component = {Colespage} />
     </Route>
   </Router>,
   document.getElementById('root')
