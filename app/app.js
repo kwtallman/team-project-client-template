@@ -15,23 +15,16 @@ import Profile from './Components/profile.js';
 import Colespage from './Components/colespage.js';
 import routerPage from './Components/routerpage.js';
 
-class App extends React.Component {
-  render() {
-    return (
-      <Router history={hasHistory|browserHistory|createMemoryHistory}>
-        <Route path="/" component={routerPage}>
-          <IndexRoute component = {Home} />
-          <Route path = "manual" component = {Manual} />
-          <Route path = "addAssignment" component = {AddAssignment} />
-          <Route path = "profile" component = {Profile} />
-          <Route path = "colespage" component = {Colespage} />
-        </Route>
-      </Router>
-    )
-  }
-}
-
 ReactDOM.render(
-  <App />,
+  <Router history={browserHistory}>
+    <Route path="/" component={routerPage}>
+      <IndexRoute component = {Home} />
+      <Route path = "/home.html" component = {Home} />
+      <Route path = "/manual.html" component = {Manual} />
+      <Route path = "/addAssignment.html" component = {AddAssignment} />
+      <Route path = "/profile.html" component = {Profile} />
+      <Route path = "/colespage.html" component = {Colespage} />
+    </Route>
+  </Router>,
   document.getElementById('root')
 )
