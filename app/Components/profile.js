@@ -2,7 +2,7 @@ import React from 'react';
 import Sidebar from './sidebar.js';
 import Footer from './footer.js';
 import Colebar from './colebar.js';
-import {getProfileData} from '../server';
+//import {getProfileData} from '../server';
 
 export default class Profile extends React.Component{
 	constructor(props) {
