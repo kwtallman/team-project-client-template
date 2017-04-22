@@ -13,12 +13,12 @@ h3 {
 }
 
 body {
-  background-color: #EEF5DB;
+  background-color: #b3daff;
   padding-top: 100px;
 }
 
 .navbar {
-  background-color: #efefef;
+  background-color: #4d94ff;
 }
 
 .second-navbar{
@@ -35,7 +35,7 @@ body {
 
 .grumber-text {
   text-align: center;
-  color: #FFAEA8 !important;
+  color: #e6e6e6 !important;
 }
 /*
 .btn-group-vertical {
