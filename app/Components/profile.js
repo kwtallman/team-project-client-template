@@ -2,19 +2,19 @@ import React from 'react';
 import Sidebar from './sidebar.js';
 import Footer from './footer.js';
 import Colebar from './colebar.js';
-//import {getProfileData} from '../server';
+import {getProfData} from '../server';
 
 export default class Profile extends React.Component{
 	constructor(props) {
     super(props);
     this.state = {
-      profile: ""
+      contents: {}
     };
   }
 
 	refresh() {
-	getProfileData(this.props.user, (profData) => {
-		this.setState(profData);
+	getProfData(this.props.user, (userData) => {
+		this.setState(userData);
 	});
 }
 
@@ -28,39 +28,33 @@ componentDidMount() {
 				<Sidebar />
         <Colebar />
         <Footer />
-			    <div className="container">
-			      <div className="row">
-			        <div className="col-md-6 left-side-info">
-			          <p>First Last</p>
-			          <p>username</p>
-			          <div>
-								{this.state.userEmail.map((acc) => {
-									return (
-										<FeedItem key={feedItem._id} data={feedItem} />
-									)
-								})}
+				<div className="container">
+					<div className="row">
+						<div className="col-md-6 left-side-info">
+							<p> {this.state.first}</p>
+							<p> {this.state.username}</p>
+							<p> {this.state.email}</p>
+								<p>Change password:</p>
+								<div className="input-customize">
+									<input type="password" className="form-control" name="old_password" placeholder="Type old password" />
 								</div>
-			          <p>Change password:</p>
-			          <div className="input-customize">
-			            <input type="password" className="form-control" name="old_password" placeholder="Type old password" />
-			          </div>
-			          <br />
-			          <div className="input-customize">
-			            <input type="password" className="form-control" name="new_password" placeholder="Type new password" />
-			          </div>
-			          <br />
-			          <div className="input-customize">
-			            <input type="password" className="form-control" name="confirm_password" placeholder="Confirm new password" />
-			          </div>
-			          <br />
-			          <button id="btn-signup" type="button" className="btn btn-success">Submit</button>
-			        </div>
-			        <div className="col-md-5 right-side-info">
-			          <img src="img/profilepic.jpg" />
-			        </div>
-			      </div>
-			    </div>
-		    </div>
+								<br />
+								<div className="input-customize">
+									<input type="password" className="form-control" name="new_password" placeholder="Type new password" />
+								</div>
+								<br />
+								<div className="input-customize">
+									<input type="password" className="form-control" name="confirm_password" placeholder="Confirm new password" />
+								</div>
+								<br />
+								<button id="btn-signup" type="button" className="btn btn-success">Submit</button>
+							</div>
+							<div className="col-md-5 right-side-info">
+								<img src="img/profilepic.jpg" />
+							</div>
+						</div>
+					</div>
+				</div>
 		)
 	}
 }

@@ -8,7 +8,7 @@ import {readDocument, writeDocument, addDocument} from './database.js';
 function emulateServerReturn(data, cb) {
   setTimeout(() => {
     cb(data);
-  }, 4);
+  }, 1);
 }
 
 export function NewAssign(assignListId, userId, cb) {
@@ -42,16 +42,19 @@ function getProfileSync(feedItemId) {
 export function getProfData(user, cb) {
   // Get the User object with the id "user".
   var userData = readDocument('users', user);
+  userData.contents.first = readDocument('users', user.contents.first);
+  userData.contents.username = readDocument('users', user.contents.username);
+  userData.contents.email = readDocument('users', user.contents.email);
   // Get the Feed object for the user.
-  var profData = readDocument('accounts', userData.account);
+  //var profData = readDocument('accounts', userData.account);
   // Map the Feed's FeedItem references to actual FeedItem objects.
   // Note: While map takes a callback function as an argument, it is
   // synchronous, not asynchronous. It calls the callback immediately.
-  profData.userEmail = profData.userEmail.map(getProfileSync);
+  //profData.userEmail = profData.userEmail.map(getProfileSync);
   // Return FeedData with resolved references.
   // emulateServerReturn will emulate an asynchronous server operation, which
   // invokes (calls) the "cb" function some time in the future.
-  emulateServerReturn(profData, cb);
+  emulateServerReturn(userData.contents, cb);
 }
 
 function getAssign(assignId) {
