@@ -59,6 +59,7 @@ function getAssign(assignId) {
 //   }
 
 //PUT methods for organization
+/*
 app.put('/AddAssignment/:getAssign/content', function(req, res) {
   var fromUser = new ObjectID(getUserIdFromToken(req.get('Authorization')));
   var assignId = new ObjectID(req.params.assignId);
@@ -68,4 +69,4 @@ app.put('/Profile/:getProfileData/content', function(req, res) {
     var fromUser = new ObjectID(getUserIdFromToken(req.get('Authorization')));
     //var for each component (name, username, email, password)
 
-}
+}*/
