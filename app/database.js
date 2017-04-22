@@ -7,7 +7,7 @@ var initialData = {
   "users": {
     "1": {
       "_id": 1,
-      "accounts": 2,
+      "account": 1,
       "assignList": 1,
       "userPass": "duck",
       "contents": [
@@ -19,7 +19,7 @@ var initialData = {
 
     "2": {
       "_id": 2,
-      "accounts": 1,
+      "account": 2,
       "assignList": 1,
       "userPass": "monkey",
       "contents": [
