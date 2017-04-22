@@ -8,7 +8,7 @@ import {readDocument, writeDocument, addDocument} from './database.js';
 function emulateServerReturn(data, cb) {
   setTimeout(() => {
     cb(data);
-  }, 4);
+  }, 1);
 }
 
 export function NewAssign(assignListId, userId, cb) {
