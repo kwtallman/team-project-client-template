@@ -10,11 +10,11 @@ var initialData = {
       "account": 1,
       "assignList": 1,
       "userPass": "duck",
-      "contents": [
+      "contents": {
         "first": "Cole",
         "username": "roberto5",
         "email": "cole@cole.com"
-      ]
+      }
     },
 
     "2": {
@@ -22,11 +22,11 @@ var initialData = {
       "account": 2,
       "assignList": 1,
       "userPass": "monkey",
-      "contents": [
+      "contents": {
         "first": "Elliot",
         "username": "coooooleedfront",
         "email": "kylekyle@kyle.t"
-      ]
+      }
     }
   },
 
