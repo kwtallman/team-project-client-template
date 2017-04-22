@@ -49,20 +49,18 @@ var initialData = {
   },
 
   "assignList": {
-    "1": {
+    "test": {
       "_id": 1,
       "assignment": [
         {
-        "assignId": 1,
-        "dueDate": 1492041540,
-        "course": "CmpSci326",
-        "aLink": "https://moodle.umass.edu/"
+        'title': 'Quiz',
+        'start': new Date(2017, 3, 7),
+        'end': new Date(2017, 3, 10)
         },
         {
-        "assignId": 2,
-        "dueDate": 1491523140,
-        "course": "English101",
-        "aLink": "https://uma.umassonline.net/"
+          'title': 'HW',
+          'start': new Date(2017, 3, 20),
+          'end': new Date(2017, 3, 20)
         }
       ]
     },
@@ -70,16 +68,9 @@ var initialData = {
       "_id": 2,
       "assignment": [
         {
-        "assignId": 1,
-        "dueDate": 1492041540,
-        "course": "CmpSci326",
-        "aLink": "https://moodle.umass.edu/"
-        },
-        {
-        "assignId": 2,
-        "dueDate": 1491523140,
-        "course": "English101",
-        "aLink": "https://uma.umassonline.net/"
+          'title': 'HW',
+          'start': new Date(2017, 4, 7),
+          'end': new Date(2017, 4, 10)
         }
       ]
     }
@@ -93,6 +84,10 @@ if (data === null) {
 
 function JSONClone(obj) {
   return JSON.parse(JSON.stringify(obj));
+}
+
+export function getInitialData(){
+  return initialData;
 }
 
 export function readDocument(collection, id) {
