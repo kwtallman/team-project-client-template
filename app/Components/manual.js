@@ -56,7 +56,7 @@ export default class Manual extends React.Component {
               <div className="form-group row">
                 <label htmlFor="classinput" className="col-2 col-form-label">Class</label>
                 <div className="col-10">
-                  <input className="form-control" type="text" value="Ex: CS326" id="classinput" />
+                  <input className="form-control" type="text" placeholder="Ex: CS326" id="classinput" />
                 </div>
               </div>
               <div className="form-group row">
@@ -69,13 +69,13 @@ export default class Manual extends React.Component {
               <div className="form-group row">
                 <label htmlFor="assigninput" className="col-2 col-form-label">Identifier</label>
                 <div className="col-10">
-                  <input className="form-control" type="text" value="Ex: UI Mockup" id="assigninput" />
+                  <input className="form-control" type="text" placeholder="Ex: UI Mockup" id="assigninput" />
                 </div>
               </div>
               <div className="form-group row">
                 <label htmlFor="dateinput" className="col-2 col-form-label">Deadline Date</label>
                 <div className="col-10">
-                  <input className="form-control" type="date" value="2017-02-25" id="dateinput" />
+                  <input className="form-control" type="date" id="dateinput" />
                 </div>
               </div>
               <div className="container" role="main">
@@ -96,12 +96,12 @@ export default class Manual extends React.Component {
               <div className="form-group row">
                 <label htmlFor="timeinput" className="col-2 col-form-label">Deadline Time</label>
                 <div className="col-10">
-                  <input className="form-control" type="time" value="01:30:00" id="timeinput" />
+                  <input className="form-control" type="time" id="timeinput" />
                 </div>
               </div>
               <div className="form-group row">
                 <label htmlFor="descinput">Description</label>
-                <textarea className="form-control" id="descinput" rows="3">Ex: Need to create UI Mockups.</textarea>
+                <textarea className="form-control" id="descinput" rows="3" placeholder="Ex: Need to create UI Mockups."></textarea>
               </div>
               <div className="form-group row">
                 <label htmlFor="colorinput" className="col-2 col-form-label">Assignment Color</label>

@@ -8,9 +8,19 @@ export default class Profile extends React.Component{
 	constructor(props) {
     super(props);
     this.state = {
-      contents: []
+      profile: ""
     };
   }
+
+	refresh() {
+	getProfileData(this.props.user, (profData) => {
+		this.setState(profData);
+	});
+}
+
+componentDidMount() {
+	this.refresh();
+}
 
 	render() {
 		return(
@@ -23,7 +33,13 @@ export default class Profile extends React.Component{
 			        <div className="col-md-6 left-side-info">
 			          <p>First Last</p>
 			          <p>username</p>
-			          <p>email@umass.edu</p>
+			          <div>
+								{this.state.userEmail.map((acc) => {
+									return (
+										<FeedItem key={feedItem._id} data={feedItem} />
+									)
+								})}
+								</div>
 			          <p>Change password:</p>
 			          <div className="input-customize">
 			            <input type="password" className="form-control" name="old_password" placeholder="Type old password" />
@@ -38,7 +54,7 @@ export default class Profile extends React.Component{
 			          </div>
 			          <br />
 			          <button id="btn-signup" type="button" className="btn btn-success">Submit</button>
-			        </div> 
+			        </div>
 			        <div className="col-md-5 right-side-info">
 			          <img src="img/profilepic.jpg" />
 			        </div>
