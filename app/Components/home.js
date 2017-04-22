@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import events from '../events';
 import Colebar from './Colebar.js'
 import Footer from './footer.js';
-
+import {getProfileSync} from '../server';
 import BigCalendar from 'react-big-calendar';
 import moment from 'moment';
 
@@ -22,7 +22,7 @@ export default class Home extends React.Component {
         <Colebar />
         <div style={{height: 400}}>
          <BigCalendar
-            events={events}
+            events=getProfileSync(assignListId)
             startAccessor={new Date(2016, 3, 1)}
             endAccessor={new Date(2017, 3, 1)}
         />
