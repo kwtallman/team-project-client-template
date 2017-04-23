@@ -5,7 +5,7 @@ var grumber = null;
 
 var initialData = {
   "users": {
-    "1": {
+    "firstUser": {
       "_id": 1,
       "account": 1,
       "assignList": 1,
