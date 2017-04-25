@@ -5,8 +5,8 @@
   "author": "John Vilk <jvilk@cs.umass.edu>",
   "license": "MIT",
   "scripts": {
-    "build": "./node_modules/.bin/webpack",
-    "serve": "./node_modules/.bin/webpack-dev-server --content-base build"
+    "serve": "webpack-dev-server --content-base build",
+    "watch": "webpack --watch"
   },
   "devDependencies": {
     "babel": "^6.3.26",
