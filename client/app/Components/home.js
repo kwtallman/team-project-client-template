@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import events from '../events';
 import {getInitialData} from '../database.js';
-import Colebar from './Colebar.js'
+import Colebar from './colebar.js'
 import Footer from './footer.js';
 //import {getProfileSync} from '../server';
 import BigCalendar from 'react-big-calendar';
