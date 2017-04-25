@@ -1,0 +1,18 @@
+{
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true,
+    "commonjs": true
+  },
+  "plugins": ["node"],
+  "rules": {
+    "node/no-missing-import": 2,
+    "node/no-missing-require": 2,
+    "node/no-unsupported-features": [2, {"version": 4}],
+    "no-console": 0
+  }
+}
