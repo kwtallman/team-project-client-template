@@ -2,7 +2,10 @@ import React from 'react';
 import Sidebar from './sidebar.js';
 import Footer from './footer.js';
 import Colebar from './colebar.js';
-import {getProfData} from '../server';
+import {getProfData} from '../server.js';
+import {getInitialData} from '../database.js'
+
+var data = getInitialData();
 
 export default class Profile extends React.Component{
 	constructor(props) {
@@ -31,9 +34,9 @@ componentDidMount() {
 				<div className="container">
 					<div className="row">
 						<div className="col-md-6 left-side-info">
-							<p> {this.state.first}</p>
-							<p> {this.state.username}</p>
-							<p> {this.state.email}</p>
+							<p>{data.users.firstUser.contents.first}</p>
+							<p>{data.users.firstUser.contents.username}</p>
+							<p>{data.users.firstUser.contents.email}</p>
 								<p>Change password:</p>
 								<div className="input-customize">
 									<input type="password" className="form-control" name="old_password" placeholder="Type old password" />
