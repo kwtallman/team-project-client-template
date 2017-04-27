@@ -1,8 +1,9 @@
 import React from 'react';
 //import {Link} from 'react-router';
+import Footer from './footer.js';
 import Sidebar from './sidebar.js';
 import Colebar from './colebar.js';
-import Footer from './footer.js';
+
 import {newAssign} from '../server.js'
 
 import {Link} from 'react-router';
@@ -70,6 +71,22 @@ export default class Manual extends React.Component {
                 </div>
               </div>
               {/*<div className="form-group row">
+              <div className="container" role="main">
+
+                <div className="boxShape">
+                  <input type="file" className="makeHidden" id="file" data-multiple-caption="{count} files selected" multiple />
+                  <label htmlFor="file" className="btn btn-primary center-block"><strong>Choose a file</strong></label>
+                  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                  <button type="submit" className="btn btn-primary center-block" onClick={(e) => this.handleSubmitClick(e)}>Upload</button>
+                    <div className="box__uploading">Uploading&hellip;</div>
+                    <div className="box__success">Done! <a className="box__restart" role="button">Upload more?</a></div>
+                    <div className="box__error">Error! <span></span>. <a className="box__restart" role="button">Try again!</a></div>
+                </div>
+
+
+            </div>
+
+              <div className="form-group row">
                 <label htmlFor="timeinput" className="col-2 col-form-label">Deadline Time</label>
                 <div className="col-10">
                   <input className="form-control" type="time" id="timeinput" />
