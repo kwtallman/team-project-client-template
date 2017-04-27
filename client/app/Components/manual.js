@@ -1,8 +1,9 @@
 import React from 'react';
 //import {Link} from 'react-router';
+import Footer from './footer.js';
 import Sidebar from './sidebar.js';
 import Colebar from './colebar.js';
-import Footer from './footer.js';
+
 import {newAssign} from '../server.js'
 
 import {Link} from 'react-router';
@@ -73,7 +74,7 @@ export default class Manual extends React.Component {
 
                 <div className="boxShape">
                   <input type="file" className="makeHidden" id="file" data-multiple-caption="{count} files selected" multiple />
-                  <label htmlFor="file" className="textAlign btn btn-primary center-block"><strong>Choose a file</strong></label>
+                  <label htmlFor="file" className="btn btn-primary center-block"><strong>Choose a file</strong></label>
                   <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                   <button type="submit" className="btn btn-primary center-block" onClick={(e) => this.handleSubmitClick(e)}>Upload</button>
                     <div className="box__uploading">Uploading&hellip;</div>
