@@ -72,10 +72,10 @@ export default class Manual extends React.Component {
               <div className="container" role="main">
 
                 <div className="boxShape">
-                  <input type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
-                  <label htmlFor="file" className="textAlign"><strong>Choose a file</strong></label>
-                  <br />
-                  <button type="submit" className="btn btn-default">Upload</button>
+                  <input type="file" className="makeHidden" id="file" data-multiple-caption="{count} files selected" multiple />
+                  <label htmlFor="file" className="textAlign btn btn-primary center-block"><strong>Choose a file</strong></label>
+                  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                  <button type="submit" className="btn btn-primary center-block" onClick={(e) => this.handleSubmitClick(e)}>Upload</button>
                     <div className="box__uploading">Uploading&hellip;</div>
                     <div className="box__success">Done! <a className="box__restart" role="button">Upload more?</a></div>
                     <div className="box__error">Error! <span></span>. <a className="box__restart" role="button">Try again!</a></div>
