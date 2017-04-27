@@ -3,7 +3,7 @@ import React from 'react';
 import Sidebar from './sidebar.js';
 import Colebar from './colebar.js';
 import Footer from './footer.js';
-import NewAssign from '../server.js'
+import {newAssign} from '../server.js'
 
 import {Link} from 'react-router';
 
@@ -21,25 +21,16 @@ export default class Manual extends React.Component {
   //}
 
   handleSubmitClick(clickEvent) {
-  // Stop the event from propagating up the DOM tree, since we handle it here.
-  // Also prevents the link click from causing the page to scroll to the top.
-  clickEvent.preventDefault();
-  // 0 represents the 'main mouse button' -- typically a left click
-  // https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/button
-  if (clickEvent.button === 0) {
-    // Callback function for both the like and unlike cases.
-    var callbackFunction = (addAssign) => {
-      // setState will overwrite the 'likeCounter' field on the current
-      // state, and will keep the other fields in-tact.
-      // This is called a shallow merge:
-      // https://facebook.github.io/react/docs/component-api.html#setstate
-      this.setState({assignment: addAssign});
-    };
+    clickEvent.preventDefault();
+    if (clickEvent.button === 0) {
+      newAssign(2, new Date(420, 4, 20), "Raj Susai is lame",  (assignmentObj) => {
+        this.setState({assignment: assignmentObj});
+      } );
+    }
 
-    NewAssign(this.state._id, 1, callbackFunction);
+
 
   }
-}
 
   render() {
     return (

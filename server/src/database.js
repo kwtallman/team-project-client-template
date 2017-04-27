@@ -1,6 +1,76 @@
 // Your startup's initial mock objects go here
 var initialData = {
+  "users": {
+    "firstUser": {
+      "_id": 1,
+      "account": 1,
+      "assignList": 1,
+      "userPass": "duck",
+      "contents": {
+        "first": "Cole",
+        "username": "roberto5",
+        "email": "cole@cole.com"
+      }
+    },
 
+    "2": {
+      "_id": 2,
+      "account": 2,
+      "assignList": 2,
+      "userPass": "monkey",
+      "contents": {
+        "first": "Elliot",
+        "username": "coooooleedfront",
+        "email": "kylekyle@kyle.t"
+      }
+    }
+  },
+
+  "accounts": {
+    "1": {
+      "type": [
+      "Moodle",
+      "Blackboard"
+      ],
+      "userEmail": "cole.arvid@something.edu",
+      "password": "cmpsci326"
+    },
+    "2": {
+      "type": [
+        "OWL"
+      ],
+      "userEmail": "elliot.crunch@something.edu",
+      "password": "crunchy"
+    }
+  },
+
+  "assignList": {
+    "test": {
+      "_id": 1,
+      "assignment": [
+        {
+        'title': 'Quiz',
+        'start': new Date(2017, 3, 7),
+        'end': new Date(2017, 3, 10)
+        },
+        {
+          'title': 'HW',
+          'start': new Date(2017, 3, 20),
+          'end': new Date(2017, 3, 20)
+        }
+      ]
+    },
+    "2": {
+      "_id": 2,
+      "assignment": [
+        {
+          'title': 'HW',
+          'start': new Date(2017, 4, 7),
+          'end': new Date(2017, 4, 10)
+        }
+      ]
+    }
+  }
 };
 
 var data;

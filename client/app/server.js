@@ -11,15 +11,13 @@ function emulateServerReturn(data, cb) {
   }, 1);
 }
 
-export function NewAssign(assignListId, userId, cb) {
-  var assignListOb = readDocument('assignList', assignListId);
-  // Normally, we would check if the user already liked this comment.
-  // But we will not do that in this mock server.
-  // ('push' modifies the array by adding userId to the end)
-  feedItem.likeCounter.push(userId);
-  writeDocument('assignList', assignListOb);
-  // Return a resolved version of the likeCounter
-  emulateServerReturn(assignList.likeCounter.map((userId) => readDocument('users', userId)), cb);
+export function newAssign(userId, deadline, identifier, cb) {
+  sendXHR('POST', '/user/' + userId + '/assignList/', {
+    "title": identifier,
+    "end": deadline
+  }, (xhr) => {
+    cb(JSON.parse(xhr.responseText));
+  });
 }
 
 function getProfileSync(feedItemId) {
@@ -91,7 +89,7 @@ app.put('/Profile/:getProfileData/content', function(req, res) {
 }*/
 
 //Going to need to get the token for user 1
-var token = ''; // <-- Put your base64'd JSON token here
+//var token = ''; // <-- Put your base64'd JSON token here
 /**
  * Properly configure+send an XMLHttpRequest with error handling,
  * authorization token, and other needed properties.
@@ -99,7 +97,7 @@ var token = ''; // <-- Put your base64'd JSON token here
 function sendXHR(verb, resource, body, cb) {
   var xhr = new XMLHttpRequest();
   xhr.open(verb, resource);
-  xhr.setRequestHeader('Authorization', 'Bearer ' + token);
+  //xhr.setRequestHeader('Authorization', 'Bearer ' + token);
 
   // The below comment tells ESLint that FacebookError is a global.
   // Otherwise, ESLint would complain about it! (See what happens in Atom if
