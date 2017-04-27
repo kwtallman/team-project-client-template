@@ -1,7 +1,7 @@
 // Your startup's initial mock objects go here
 var initialData = {
   "users": {
-    "firstUser": {
+    "1": {
       "_id": 1,
       "account": 1,
       "assignList": 1,
@@ -45,13 +45,13 @@ var initialData = {
   },
 
   "assignList": {
-    "test": {
+    "1": {
       "_id": 1,
       "assignment": [
         {
         'title': 'Quiz',
         'start': new Date(2017, 3, 7),
-        'end': new Date(2017, 3, 10)
+        'end': new Date(2017, 3, 7)
         },
         {
           'title': 'HW',
@@ -66,7 +66,7 @@ var initialData = {
         {
           'title': 'HW',
           'start': new Date(2017, 4, 7),
-          'end': new Date(2017, 4, 10)
+          'end': new Date(2017, 4, 7)
         }
       ]
     }

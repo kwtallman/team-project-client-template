@@ -23,7 +23,7 @@ export default class Manual extends React.Component {
   handleSubmitClick(clickEvent) {
     clickEvent.preventDefault();
     if (clickEvent.button === 0) {
-      newAssign(2, new Date(420, 4, 20), "Raj Susai is lame",  (assignmentObj) => {
+      newAssign(1, document.getElementById("dateinput").value, document.getElementById("assigninput").value,  (assignmentObj) => {
         this.setState({assignment: assignmentObj});
       } );
     }
@@ -44,7 +44,7 @@ export default class Manual extends React.Component {
           <div className="col-md-4"></div>
           <div className="col-md-4">
             <form method="post">
-              <div className="form-group row">
+              {/*<div className="form-group row">
                 <label htmlFor="classinput" className="col-2 col-form-label">Class</label>
                 <div className="col-10">
                   <input className="form-control" type="text" placeholder="Ex: CS326" id="classinput" />
@@ -56,35 +56,20 @@ export default class Manual extends React.Component {
                   <option>Assignment</option>
                   <option>Event</option>
                 </select>
-              </div>
+              </div>*/}
               <div className="form-group row">
-                <label htmlFor="assigninput" className="col-2 col-form-label">Identifier</label>
+                <label htmlFor="assigninput" className="col-2 col-form-label">Assignment Name</label>
                 <div className="col-10">
                   <input className="form-control" type="text" placeholder="Ex: UI Mockup" id="assigninput" />
                 </div>
               </div>
               <div className="form-group row">
-                <label htmlFor="dateinput" className="col-2 col-form-label">Deadline Date</label>
+                <label htmlFor="dateinput" className="col-2 col-form-label">Due Date</label>
                 <div className="col-10">
                   <input className="form-control" type="date" id="dateinput" />
                 </div>
               </div>
-              <div className="container" role="main">
-
-                <div className="boxShape">
-                  <input type="file" className="makeHidden" id="file" data-multiple-caption="{count} files selected" multiple />
-                  <label htmlFor="file" className="textAlign btn btn-primary center-block"><strong>Choose a file</strong></label>
-                  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                  <button type="submit" className="btn btn-primary center-block" onClick={(e) => this.handleSubmitClick(e)}>Upload</button>
-                    <div className="box__uploading">Uploading&hellip;</div>
-                    <div className="box__success">Done! <a className="box__restart" role="button">Upload more?</a></div>
-                    <div className="box__error">Error! <span></span>. <a className="box__restart" role="button">Try again!</a></div>
-                </div>
-
-
-            </div>
-
-              <div className="form-group row">
+              {/*<div className="form-group row">
                 <label htmlFor="timeinput" className="col-2 col-form-label">Deadline Time</label>
                 <div className="col-10">
                   <input className="form-control" type="time" id="timeinput" />
@@ -99,9 +84,20 @@ export default class Manual extends React.Component {
                 <div className="col-10">
                   <input className="form-control" type="color" value="Ex: CS326" id="colorinput" />
                 </div>
-              </div>
+              </div>*/}
                 <button type="submit" className= "btn btn-primary center-block" onClick={(e) => this.handleSubmitClick(e)}>Submit</button>
               <p className="padding"> </p>
+              <div className="container" role="main">
+                <div className="boxShape">
+                  <input type="file" className="makeHidden" id="file" data-multiple-caption="{count} files selected" multiple />
+                  <label htmlFor="file" className="textAlign btn btn-primary center-block"><strong>Choose a file</strong></label>
+                  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                  <button type="submit" className="btn btn-primary center-block" onClick={(e) => this.handleSubmitClick(e)}>Upload</button>
+                    <div className="box__uploading">Uploading&hellip;</div>
+                    <div className="box__success">Done! <a className="box__restart" role="button">Upload more?</a></div>
+                    <div className="box__error">Error! <span></span>. <a className="box__restart" role="button">Try again!</a></div>
+                </div>
+            </div>
             </form>
           </div>
         </div>
