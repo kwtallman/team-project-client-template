@@ -30,7 +30,7 @@ app.post('/user/:userid/assignList/', function(req, res){
 
     var newAssignment = {
       "title": body.title,
-      "start": new Date(2000, 1, 1),
+      "start": body.title,
       "end": body.end
     }
 

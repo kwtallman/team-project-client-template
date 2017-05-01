@@ -24,7 +24,7 @@ export default class Manual extends React.Component {
   handleSubmitClick(clickEvent) {
     clickEvent.preventDefault();
     if (clickEvent.button === 0) {
-      newAssign(1, document.getElementById("dateinput").value, document.getElementById("assigninput").value,  (assignmentObj) => {
+      newAssign(1, document.getElementById("dateinput")).value, document.getElementById("assigninput").value,  (assignmentObj) => {
         this.setState({assignment: assignmentObj});
       } );
     }
