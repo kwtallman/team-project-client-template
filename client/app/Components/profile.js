@@ -25,6 +25,14 @@ componentDidMount() {
 	this.refresh();
 }
 
+handleSubmitClick(clickEvent) {
+	clickEvent.preventDefault();
+	if (clickEvent.button === 0) {
+		newAssign(1, document.getElementById("newPassword").value,  (userObj) => {
+			this.setState({1: userObj});
+		} );
+	}
+
 	render() {
 		return(
 			<div>
@@ -47,10 +55,10 @@ componentDidMount() {
 								</div>
 								<br />
 								<div className="input-customize">
-									<input type="password" className="form-control" name="confirm_password" placeholder="Confirm new password" />
+									<input type="password" className="form-control" name="confirm_password" placeholder="Confirm new password" id="newPassword"/>
 								</div>
 								<br />
-								<button id="btn-signup" type="button" className="btn btn-success">Submit</button>
+								<button id="btn-signup" type="button" className="btn btn-success" onClick={(e) => this.handleSubmitClick(e)}>Submit</button>
 							</div>
 							<div className="col-md-5 right-side-info">
 								<img src="img/profilepic.jpg" />

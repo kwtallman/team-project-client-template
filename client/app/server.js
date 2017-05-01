@@ -14,7 +14,15 @@ function emulateServerReturn(data, cb) {
 export function newAssign(userId, deadline, identifier, cb) {
   sendXHR('POST', '/user/' + userId + '/assignList/', {
     "title": identifier,
+    "start": deadline,
     "end": deadline
+  }, (xhr) => {
+    cb(JSON.parse(xhr.responseText));
+  });
+}
+export function newPass(userId, pass, cb) {
+  sendXHR('POST', '/user/' + userId + '/users/', {
+    "password": pass
   }, (xhr) => {
     cb(JSON.parse(xhr.responseText));
   });

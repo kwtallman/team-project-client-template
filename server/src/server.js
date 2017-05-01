@@ -29,8 +29,7 @@ app.post('/user/:userid/assignList/', function(req, res){
     var assignList = readDocument('assignList', user.assignList);
 
     var newAssignment = {
-      "title": body.title,
-      "start": body.title,
+      "title": body.title,,
       "end": body.end
     }
 
